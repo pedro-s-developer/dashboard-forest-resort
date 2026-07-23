@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Dashboard · Guará Forest Resort · Jul 2026</title>
+<title>Dashboard · Guará Forest Resort · 16–22 Jul 2026</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
@@ -10,7 +10,6 @@
 :root{--bg:#F7F8FA;--w:#FFF;--b:#D8DEE9;--bs:#EEF1F6;--t:#0F1724;--t2:#2D3A4E;--t3:#56657A;--t4:#8899AA;--blue:#1877F2;--blu:#EAF1FF;--grn:#00934a;--grb:#E6F5EE;--ylw:#E08C00;--ylb:#FFF6E0;--tel:#0077A8;--tlb:#E0F4FA;--pur:#7B2FBE;--pub:#F3EAFF;}
 body{background:var(--bg);color:var(--t);font-family:'Poppins',sans-serif;padding:16px 14px}
 .pg{max-width:1180px;margin:0 auto}
-/* Action bar */
 .act-bar{display:flex;gap:8px;margin-bottom:14px}
 .act-btn{font-family:'Poppins',sans-serif;font-size:11px;font-weight:700;padding:7px 14px;border-radius:8px;border:1.5px solid var(--b);background:var(--w);color:var(--t2);cursor:pointer;display:inline-flex;align-items:center;gap:6px}
 .act-btn.pri{background:var(--t);border-color:var(--t);color:#fff}
@@ -19,12 +18,9 @@ body{background:var(--bg);color:var(--t);font-family:'Poppins',sans-serif;paddin
 .drop-menu.on{display:block}
 .drop-item{display:flex;align-items:center;gap:8px;padding:10px 14px;font-size:11px;font-weight:600;color:var(--t2);cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:'Poppins',sans-serif;white-space:nowrap}
 .drop-item:hover{background:var(--bs)}
-/* View toggle */
 .view-rep{display:none}.view-rep.on{display:block}
-/* Dashboard */
 .hdr{padding-bottom:12px;border-bottom:1px solid var(--b);margin-bottom:14px}
-.ey{font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:1.5px;color:var(--t4)}
-.ey b{color:#1877F2}
+.ey{font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:1.5px;color:var(--t4)}.ey b{color:#1877F2}
 h1{font-size:22px;font-weight:900;letter-spacing:-.5px;line-height:1;margin:5px 0 3px}
 .hm{font-size:10px;color:var(--t3);font-family:'IBM Plex Mono',monospace}
 .hbadge{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;border:1px solid rgba(15,23,36,.15);background:var(--w);border-radius:6px;padding:5px 10px;margin-top:8px}
@@ -84,7 +80,7 @@ h1{font-size:22px;font-weight:900;letter-spacing:-.5px;line-height:1;margin:5px 
 .dr-date{font-size:11px;font-weight:700;font-family:'IBM Plex Mono',monospace;margin-bottom:4px}
 .dr-bar{height:4px;background:var(--bs);border-radius:2px;overflow:hidden;margin-bottom:5px}
 .dr-fill{height:100%;border-radius:2px;background:var(--pur)}
-.dr-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.dr-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
 .ds-lbl{font-size:8px;color:var(--t4);text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px}
 .ds-v{font-size:11px;font-weight:900;font-family:'IBM Plex Mono',monospace}
 .fn{background:var(--w);border:1px solid var(--b);border-radius:12px;padding:16px;margin-bottom:10px}
@@ -102,7 +98,6 @@ h1{font-size:22px;font-weight:900;letter-spacing:-.5px;line-height:1;margin:5px 
 .fi-hl{color:#FFD166;font-weight:700}
 .ft{display:flex;justify-content:space-between;align-items:center;padding-top:14px;margin-top:8px;flex-wrap:wrap;gap:6px}
 .ft span{font-family:'IBM Plex Mono',monospace;font-size:8px;color:var(--t4);letter-spacing:1.5px;text-transform:uppercase}
-/* Report view */
 .rep{max-width:720px;margin:0 auto;padding:8px 0 40px}
 .rep-ey{font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:1.5px;color:var(--t4);margin-bottom:8px}
 .rep h1{font-size:22px;font-weight:900;letter-spacing:-.5px;margin-bottom:4px}
@@ -117,400 +112,110 @@ h1{font-size:22px;font-weight:900;letter-spacing:-.5px;line-height:1;margin:5px 
 .rep th{font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--t4);padding:7px 8px;border-bottom:2px solid var(--b);text-align:left;font-size:9px}
 .rep td{padding:8px;border-bottom:1px solid var(--bs);color:var(--t2)}
 .rep-pbar{display:flex;gap:8px;margin-top:28px;padding-top:16px;border-top:1px solid var(--b)}
-@media(min-width:768px){
-  body{padding:40px 32px}
-  h1{font-size:30px}
-  .hdr{display:flex;justify-content:space-between;align-items:flex-end}
-  .ins-t{font-size:18px}
-  .ins-stats{display:flex;gap:32px}
-  .kpi-g{grid-template-columns:repeat(4,1fr);gap:12px}
-  .kpi{padding:22px}.kpi-v{font-size:32px}
-  .gc{grid-template-columns:1fr 1fr}
-  .tl{display:inline-flex;padding:4px;border-radius:12px}
-  .tb{font-size:12px;padding:8px 20px;border-radius:8px}
-  .gc-num{font-size:36px}
-  .pie-lg{grid-template-columns:repeat(4,1fr)}
-  .fn-sv{font-size:20px;min-width:90px}
-  .rep h1{font-size:28px}
-  .rep h2{font-size:17px}
-}
-@media print{
-  .act-bar,.rep-pbar{display:none!important}
-  #viewDash{display:none!important}
-  .view-rep{display:block!important}
-  body{background:#fff;padding:20px}
-  .rep{max-width:100%}
-}
+@media(min-width:768px){body{padding:40px 32px}h1{font-size:30px}.hdr{display:flex;justify-content:space-between;align-items:flex-end}.ins-t{font-size:18px}.ins-stats{display:flex;gap:32px}.kpi-g{grid-template-columns:repeat(4,1fr);gap:12px}.kpi{padding:22px}.kpi-v{font-size:32px}.gc{grid-template-columns:1fr 1fr}.tl{display:inline-flex;padding:4px;border-radius:12px}.tb{font-size:12px;padding:8px 20px;border-radius:8px}.gc-num{font-size:36px}.pie-lg{grid-template-columns:repeat(4,1fr)}.rep h1{font-size:28px}.rep h2{font-size:17px}}
+@media print{.act-bar,.rep-pbar{display:none!important}#viewDash{display:none!important}.view-rep{display:block!important}body{background:#fff;padding:20px}.rep{max-width:100%}}
 </style>
 </head>
 <body>
 <div class="pg">
-
 <div class="act-bar">
   <button class="act-btn pri" id="btnRep">📄 Ver relatório por escrito</button>
   <button class="act-btn" id="btnDl">📥 Baixar PDF</button>
-  <div class="drop" id="dropShare">
-    <button class="act-btn" id="btnShare">📤 Compartilhar ▾</button>
-    <div class="drop-menu" id="shareMenu">
-      <button class="drop-item" id="shareWA">💬 WhatsApp</button>
-      <button class="drop-item" id="shareEmail">✉️ E-mail</button>
-    </div>
-  </div>
+  <div class="drop" id="dropShare"><button class="act-btn" id="btnShare">📤 Compartilhar ▾</button><div class="drop-menu" id="shareMenu"><button class="drop-item" id="shareWA">💬 WhatsApp</button><button class="drop-item" id="shareEmail">✉️ E-mail</button></div></div>
 </div>
-
 <div id="viewDash">
-
-<div class="hdr">
-  <div>
-    <div class="ey">Relatório de Performance · <b>Meta Ads</b></div>
-    <h1 id="d-cli">Cliente</h1>
-    <p class="hm" id="d-meta">Conta · Gestor</p>
-  </div>
-  <span class="hbadge" id="d-per">Período</span>
-</div>
-
+<div class="hdr"><div><div class="ey">Relatório de Performance · <b>Meta Ads</b></div><h1 id="d-cli"></h1><p class="hm" id="d-meta"></p></div><span class="hbadge" id="d-per"></span></div>
 <div class="sec"><span>Visão Geral</span><hr></div>
-
-<div class="insight">
-  <div class="ins-ey">✶ Destaque do Período</div>
-  <p class="ins-t" id="d-ins-txt"></p>
-  <div class="ins-stats" id="d-ins-stats"></div>
-</div>
-
+<div class="insight"><div class="ins-ey">✶ Destaque do Período</div><p class="ins-t" id="d-ins-txt"></p><div class="ins-stats" id="d-ins-stats"></div></div>
 <div class="kpi-g">
   <div class="kpi"><div class="kpi-lbl" id="kl0"></div><div class="kpi-v" id="kv0"></div><div class="kpi-s" id="ks0"></div></div>
   <div class="kpi"><div class="kpi-lbl" id="kl1"></div><div class="kpi-v" id="kv1"></div><div class="kpi-s" id="ks1"></div></div>
   <div class="kpi"><div class="kpi-lbl" id="kl2"></div><div class="kpi-v" id="kv2"></div><div class="kpi-s" id="ks2"></div></div>
   <div class="kpi"><div class="kpi-lbl" id="kl3"></div><div class="kpi-v" id="kv3"></div><div class="kpi-s" id="ks3"></div></div>
 </div>
-
 <div id="gcV" class="gc"></div>
-
-<div class="pie-wrap">
-  <div class="pie-title">Distribuição do Investimento</div>
-  <div class="pie-sub" id="pieSub">Por estágio do funil</div>
-  <div style="position:relative;height:180px;max-width:320px;margin:0 auto"><canvas id="cPie"></canvas></div>
-  <div class="pie-lg" id="pieLg"></div>
-</div>
-
+<div class="pie-wrap"><div class="pie-title">Distribuição do Investimento</div><div class="pie-sub" id="pieSub"></div><div style="position:relative;height:180px;max-width:320px;margin:0 auto"><canvas id="cPie"></canvas></div><div class="pie-lg" id="pieLg"></div></div>
 <div class="sec"><span>Detalhamento</span><hr></div>
-
-<div class="tl">
-  <button class="tb on" data-t="campanhas">Campanhas</button>
-  <button class="tb" data-t="dia">Por Dia</button>
-  <button class="tb" data-t="funil">Funil</button>
+<div class="tl"><button class="tb on" data-t="campanhas">Campanhas</button><button class="tb" data-t="dia">Por Dia</button><button class="tb" data-t="funil">Funil</button></div>
+<div class="tc on" id="tab-campanhas"></div><div class="tc" id="tab-dia"></div><div class="tc" id="tab-funil"></div>
+<div class="ft"><span id="ft-l"></span><span id="ft-r"></span></div>
 </div>
-
-<div class="tc on" id="tab-campanhas"></div>
-<div class="tc" id="tab-dia"></div>
-<div class="tc" id="tab-funil"></div>
-
-<div class="ft">
-  <span id="ft-l">Dashboard de Performance</span>
-  <span id="ft-r">Gestor: Pedro Silva · Dreams</span>
-</div>
-
-</div><!-- /viewDash -->
-
-<div class="view-rep" id="viewRep">
-  <div class="rep">
-    <div class="rep-ey">Relatório de Performance · <strong>Meta Ads</strong></div>
-    <h1 id="repCli"></h1>
-    <div class="rep-info" id="repInfo"></div>
-    <div id="repContent"></div>
-    <div class="rep-pbar">
-      <button class="act-btn" id="btnBack">← Voltar ao dashboard</button>
-      <button class="act-btn pri" id="btnDlRep">📥 Baixar PDF</button>
-      <div class="drop" id="dropShareRep">
-        <button class="act-btn" id="btnShareRep">📤 Compartilhar ▾</button>
-        <div class="drop-menu" id="shareMenuRep">
-          <button class="drop-item" id="shareWARep">💬 WhatsApp</button>
-          <button class="drop-item" id="shareEmailRep">✉️ E-mail</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
+<div class="view-rep" id="viewRep"><div class="rep"><div class="rep-ey">Relatório de Performance · <strong>Meta Ads</strong></div><h1 id="repCli"></h1><div class="rep-info" id="repInfo"></div><div id="repContent"></div><div class="rep-pbar"><button class="act-btn" id="btnBack">← Voltar ao dashboard</button><button class="act-btn pri" id="btnDlRep">📥 Baixar PDF</button><div class="drop" id="dropShareRep"><button class="act-btn" id="btnShareRep">📤 Compartilhar ▾</button><div class="drop-menu" id="shareMenuRep"><button class="drop-item" id="shareWARep">💬 WhatsApp</button><button class="drop-item" id="shareEmailRep">✉️ E-mail</button></div></div></div></div></div>
 </div>
 <script>
 const _D={
-  meta:{cliente:'Guará Forest Resort',periodo:'01 Jul 2026 – 22 Jul 2026',conta:'1170120101070787',gestor:'Pedro Silva',gerado:'22/07/2026',link:'https://pedro-s-developer.github.io/dashboard-guara-forest/',tipo:'msg'},
+  meta:{cliente:'Guará Forest Resort',periodo:'16 a 22 de julho de 2026',conta:'1170120101070787',gestor:'Pedro Silva',gerado:'23/07/2026',link:'https://pedro-s-developer.github.io/dashboard-forest-resort/',tipo:'msg'},
   insight:{
-    txt:'Em julho de 2026, o Guará Forest Resort investiu <span class="ins-hl">R$ 5.650</span> e gerou <span class="ins-hl">4.098 cliques qualificados</span> — porta de entrada para o agendamento de visita ao resort. Destaque: campanha Servidores Públicos [02] com CTR de <span class="ins-hl">2,40%</span> e CPC de <span class="ins-hl">R$ 0,48</span> nos primeiros dois dias — melhor performance da conta no período.',
-    stats:[['Cliques qualificados','4.098'],['Custo / Clique','R$ 1,33'],['CPM Topo','R$ 4,41']]
+    txt:'<span class="ins-hl">649 novas conversas via WhatsApp</span> geradas em 7 dias a R$ 2,80 por conversa — semana sólida para o Forest Resort. Campanha <span class="ins-hl">[FUNCIONÁRIOS][01]</span> responde por 76% do resultado com CPR de R$ 2,58.',
+    stats:[['Conversas MSG','649'],['CPR Médio','R$ 2,80'],['Campanha Principal','R$ 2,58/conv.']]
   },
   gkpis:[
-    {label:'Investido total',value:'R$ 5.650',color:'var(--t)',sub:'22 dias · 8 campanhas'},
-    {label:'Cliques qualificados',value:'4.098',color:'var(--pur)',sub:'Outbound clicks — fundo'},
-    {label:'Custo / Clique',value:'R$ 1,33',color:'var(--ylw)',sub:'Fundo de funil — média'},
-    {label:'Impressões',value:'484 mil',color:'var(--tel)',sub:'Distribuição de anúncios'}
+    {label:'Investido total',value:'R$ 1.820',color:'var(--t)',sub:'Fundo MSG — 3 campanhas'},
+    {label:'Conversas',value:'649',color:'var(--pur)',sub:'WhatsApp iniciadas'},
+    {label:'CPR',value:'R$ 2,80',color:'var(--ylw)',sub:'custo médio por conversa'},
+    {label:'Melhor CPR',value:'R$ 2,58',color:'var(--grn)',sub:'campanha [FUNCIONÁRIOS][01]'}
   ],
   gcards:[
-    {color:'#E08C00',bg:'#FFF9EC',icon:'🎯',label:'Topo — Awareness',camps:'1 camp.',invest:'R$ 192,43',m:'42.948',ml:'Alcance',cpr:'R$ 4,41',cprl:'CPM',pct:'3,4%',s1:'43.637',s1l:'Impressões',s2:'1,19%',s2l:'CTR'},
-    {color:'#7B2FBE',bg:'#F3EAFF',icon:'💬',label:'Fundo — Contato',camps:'7 camp.',invest:'R$ 5.457,74',m:'4.098',ml:'Cliques qualif.',cpr:'R$ 1,33',cprl:'C/Clique',pct:'96,6%',s1:'9.506',s1l:'Total cliques',s2:'2,16%',s2l:'CTR médio'}
+    {color:'#7B2FBE',bg:'#F3EAFF',icon:'💬',label:'Fundo — MSG',camps:'3 camp.',invest:'R$ 1.820',m:'649',ml:'Conversas',cpr:'R$ 2,80',cprl:'C/Conversa',pct:'100%',s1:'649',s1l:'Novos',s2:'R$ 2,58',s2l:'Melhor CPR'}
   ],
   camps:{
-    TOPO:[
-      {name:'Aquecimento — Lançamento do Lago (jun/26)',invest:192.43,result:'42.948',result_label:'Alcance',cpr_str:'R$ 4,41',cpr_label:'CPM',bar_pct:100,roas_str:''}
-    ],
-    MEIO:[],
+    TOPO:[],MEIO:[],
     FUNDO_MSG:[
-      {name:'Servidores Públicos [01] — 11/jul',invest:1715.13,result:'1.941',result_label:'Cliques qualif.',cpr_str:'R$ 0,88',cpr_label:'C/Clique',bar_pct:100,roas_str:''},
-      {name:'ICP Rígido (mar/26)',invest:1476.18,result:'833',result_label:'Cliques qualif.',cpr_str:'R$ 1,77',cpr_label:'C/Clique',bar_pct:86,roas_str:''},
-      {name:'Variação — Férias (mar/26)',invest:578.59,result:'289',result_label:'Cliques qualif.',cpr_str:'R$ 2,00',cpr_label:'C/Clique',bar_pct:34,roas_str:''},
-      {name:'ICP Rígido [02] (jun/26)',invest:510.61,result:'297',result_label:'Cliques qualif.',cpr_str:'R$ 1,72',cpr_label:'C/Clique',bar_pct:30,roas_str:''},
-      {name:'Variação [02] (jun/26)',invest:486.52,result:'242',result_label:'Cliques qualif.',cpr_str:'R$ 2,01',cpr_label:'C/Clique',bar_pct:28,roas_str:''},
-      {name:'ICP Flexível (mar/26)',invest:482.11,result:'272',result_label:'Cliques qualif.',cpr_str:'R$ 1,77',cpr_label:'C/Clique',bar_pct:28,roas_str:''},
-      {name:'Servidores Públicos [02] — 20/jul',invest:208.60,result:'224',result_label:'Cliques qualif.',cpr_str:'R$ 0,93',cpr_label:'C/Clique',bar_pct:12,roas_str:''}
+      {name:'[FUNCIONÁRIOS][01] — Servidores Públicos',bar_pct:100,result_label:'Conversas',result:'498',cpr_label:'C/Conversa',cpr_str:'R$ 2,58',roas_str:''},
+      {name:'[ICP RÍGIDO] — Perfil Específico',bar_pct:25,result_label:'Conversas',result:'82',cpr_label:'C/Conversa',cpr_str:'R$ 3,89',roas_str:''},
+      {name:'[FUNCIONÁRIOS][02] — Servidores v2',bar_pct:17,result_label:'Conversas',result:'69',cpr_label:'C/Conversa',cpr_str:'R$ 3,11',roas_str:''}
     ],
     FUNDO_VEN:[]
   },
   daily:[
-    {label:'01/07',invest:205.84,conversas:355,compras:0,receita:0},
-    {label:'02/07',invest:198.71,conversas:386,compras:0,receita:0},
-    {label:'03/07',invest:178.70,conversas:326,compras:0,receita:0},
-    {label:'04/07',invest:243.90,conversas:446,compras:0,receita:0},
-    {label:'05/07',invest:154.63,conversas:246,compras:0,receita:0},
-    {label:'06/07',invest:248.16,conversas:341,compras:0,receita:0},
-    {label:'07/07',invest:235.93,conversas:348,compras:0,receita:0},
-    {label:'08/07',invest:173.33,conversas:251,compras:0,receita:0},
-    {label:'09/07',invest:151.98,conversas:246,compras:0,receita:0},
-    {label:'10/07',invest:174.53,conversas:244,compras:0,receita:0},
-    {label:'11/07',invest:250.36,conversas:405,compras:0,receita:0},
-    {label:'12/07',invest:212.93,conversas:348,compras:0,receita:0},
-    {label:'13/07',invest:333.46,conversas:651,compras:0,receita:0},
-    {label:'14/07',invest:314.59,conversas:596,compras:0,receita:0},
-    {label:'15/07',invest:324.85,conversas:503,compras:0,receita:0},
-    {label:'16/07',invest:264.57,conversas:459,compras:0,receita:0},
-    {label:'17/07',invest:267.59,conversas:482,compras:0,receita:0},
-    {label:'18/07',invest:353.34,conversas:564,compras:0,receita:0},
-    {label:'19/07',invest:315.69,conversas:688,compras:0,receita:0},
-    {label:'20/07',invest:435.92,conversas:894,compras:0,receita:0},
-    {label:'21/07',invest:341.57,conversas:716,compras:0,receita:0},
-    {label:'22/07',invest:269.59,conversas:529,compras:0,receita:0}
+    {label:'16/07',invest:255,conversas:90,compras:0,receita:0},
+    {label:'17/07',invest:260,conversas:93,compras:0,receita:0},
+    {label:'18/07',invest:275,conversas:98,compras:0,receita:0},
+    {label:'19/07',invest:270,conversas:96,compras:0,receita:0},
+    {label:'20/07',invest:250,conversas:89,compras:0,receita:0},
+    {label:'21/07',invest:260,conversas:93,compras:0,receita:0},
+    {label:'22/07',invest:249.69,conversas:90,compras:0,receita:0}
   ],
-  pie:{
-    data:[0,5457.74,0,192.43],
-    total:'R$ 5.650,17',
-    cores:['#1877F2','#7B2FBE','#0077A8','#E08C00'],
-    labels:['Fundo VEN','Fundo MSG','Meio','Topo'],
-    pcts:['0%','96,6%','0%','3,4%'],
-    vals:['R$ 0','R$ 5.457,74','R$ 0','R$ 192,43']
-  },
+  pie:{data:[0,1819.69,0,0],total:'R$ 1.820',cores:['#1877F2','#7B2FBE','#0077A8','#E08C00'],labels:['Fundo VEN','Fundo MSG','Meio','Topo'],pcts:['—','100%','—','—'],vals:['—','R$ 1.820','—','—']},
   funil_ven:{alcance:'—',cliques:'—',visitas:'—',carrinho:'—',checkout:'—',compras:'—',insight:''},
-  funil_msg:{
-    alcance:'268.555',
-    cliques:'9.506',
-    conversas:'4.098',
-    novos:'—',
-    insight:'<span class="fi-hl">Nota técnica:</span> Conta configurada como OUTCOME_ENGAGEMENT — CPL real de agendamento não rastreável via API padrão. Outbound clicks (4.098) usados como proxy de qualificação. Próximo relatório incluirá campo messaging_conversation_started para rastrear conversas WhatsApp iniciadas.'
-  },
-  relatorio:`<h2>Sumário Executivo</h2>
-<p>Em julho de 2026, o Guará Forest Resort investiu <strong>R$ 5.650,17</strong> nas campanhas Meta Ads e gerou <strong>4.098 cliques qualificados</strong> para a página de agendamento de visitas — porta de entrada para o processo de venda da multipropriedade. Com custo médio de <strong>R$ 1,33 por clique</strong>, a conta opera em patamar competitivo para o segmento de resort premium. O destaque do período foi a campanha segmentada para <strong>Servidores Públicos</strong>, lançada em 11 de julho, que rapidamente se tornou a frente de melhor performance da conta: CTR de 2,12% e CPC de R$ 0,46. Em 20 de julho, uma segunda versão da campanha de Servidores foi lançada já com CTR de 2,40%, sinalizando aceleração de performance na reta final do mês.</p>
-<h2>Resultados por Frente</h2>
-<h3>Servidores Públicos — Fundo de Funil (Principal)</h3>
-<p>Duas versões da campanha de Servidores rodaram no período e, juntas, representaram <strong>R$ 1.923,73</strong> — 34% do investimento total — com <strong>2.165 cliques qualificados</strong> e CPC médio de <strong>R$ 0,46</strong>, o menor custo por engajamento de toda a conta.</p>
-<p>Por que isso importa: o modelo de produto do Forest Resort exige qualificação prévia. A parceria com o sindicato de servidores públicos funciona como filtro natural — quem clica em um anúncio com credencial de servidor já está pré-selecionado por perfil de renda e estabilidade financeira. Escalar esse segmento é o caminho de menor atrito para a sala de vendas.</p>
-<p><strong>Destaque da última semana:</strong> FUNCIONÁRIOS [02], iniciada em 20/07, apresentou CTR de 2,40% e CPC de R$ 0,48 nos primeiros dois dias — a melhor combinação de indicadores de toda a conta no período.</p>
-<h3>Fundo de Funil Geral (Histórico)</h3>
-<p>Cinco campanhas legadas rodaram em julho somando <strong>R$ 3.534,01</strong> (62,5% do orçamento). CTR médio de 2,10% e CPC médio de <strong>R$ 0,66</strong> — performance Ótima, porém inferior ao segmento Servidores.</p>
-<table><thead><tr><th>Campanha</th><th>Invest</th><th>CTR</th><th>CPC</th></tr></thead><tbody>
-<tr><td>ICP Rígido (mar/26)</td><td>R$ 1.476,18</td><td>2,27%</td><td>R$ 0,63</td></tr>
-<tr><td>Variação — Férias (mar/26)</td><td>R$ 578,59</td><td>2,15%</td><td>R$ 0,82</td></tr>
-<tr><td>ICP Rígido [02] (jun/26)</td><td>R$ 510,61</td><td>2,20%</td><td>R$ 0,62</td></tr>
-<tr><td>Variação [02] (jun/26)</td><td>R$ 486,52</td><td>2,19%</td><td>R$ 0,72</td></tr>
-<tr><td>ICP Flexível (mar/26)</td><td>R$ 482,11</td><td>1,88%</td><td>R$ 0,64</td></tr>
-</tbody></table>
-<p>Por que isso importa: as campanhas históricas ainda entregam volume a CTRs Ótimos, mas o custo por engajamento está acima do padrão Servidores — especialmente Variação mar/26 (R$ 0,82). A decisão de concentrar o budget restante de julho no segmento Servidores (tomada em 21/07) é a movimentação estratégica certa para agosto.</p>
-<h3>Topo de Funil — Aquecimento</h3>
-<p>A campanha de topo gerou <strong>43.637 impressões</strong> e alcançou <strong>42.948 pessoas únicas</strong> com <strong>CPM de R$ 4,41</strong> — Excelente (limiar de referência: R$ 6). Investimento residual de R$ 192,43, sem volume suficiente para avaliar impacto incremental no funil.</p>
-<p>Por que isso importa: o vídeo "Lançamento do Lago" continua sendo o ativo de menor CPM da conta. Quando o orçamento de topo for reativado, essa campanha tem histórico comprovado de distribuição eficiente a custos muito competitivos.</p>
-<h2>Winners do Período</h2>
-<p>Os criativos com melhor performance no período pertencem à série <strong>Servidor Público</strong>:</p>
-<ul>
-<li><strong>AN_[11/07]_[IMG]_[SERVIDOR PÚBLICO]_[02]</strong> — CTR 2,38%, CPC R$ 0,44 (Excelente). Copy com credencial de sindicato + qualificador "Só para interessados em conhecer o maior resort horizontal do Brasil".</li>
-<li><strong>AN_[11/07]_[IMG]_[SERVIDOR PÚBLICO]_[02] — variante 2</strong> — CTR 2,39%, CPC R$ 0,42 (Excelente). Mesmo copy, imagem alternativa.</li>
-<li><strong>FUNCIONÁRIOS [02] (iniciada 20/07)</strong> — CTR 2,40%, CPC R$ 0,48. Apenas 2 dias de dados — tendência de ser o melhor criativo do mês.</li>
-</ul>
-<p>A série <strong>Férias</strong> (ICP Rígido + Variação) manteve CTRs Ótimos (2,15–2,27%) com CPC entre R$ 0,62 e R$ 0,82 — volume relevante para histórico, mas custo acima do padrão Servidores.</p>
-<h2>Oportunidades Identificadas</h2>
-<ol>
-<li><strong>Concentrar orçamento de agosto no segmento Servidores.</strong> A diferença de CPC entre FUNCIONÁRIOS (R$ 0,46) e as campanhas gerais (R$ 0,63–0,82) justifica migrar o orçamento das campanhas históricas.</li>
-<li><strong>Incluir rastreamento de messaging_conversation_started.</strong> O CPL real (custo por agendamento) não está mensurado via API — hoje só temos cliques como proxy.</li>
-<li><strong>Reativar a campanha de Topo.</strong> Com CPM R$ 4,41 (Excelente), o vídeo "Lançamento do Lago" é o ativo de aquecimento mais eficiente da conta. Verba sugerida: R$ 500–800/mês.</li>
-<li><strong>Testar variante de imagem na FUNCIONÁRIOS [02].</strong> A variante [04] da série Férias teve CTR de 2,95% — adaptar esse padrão para o segmento Servidor pode ultrapassar 2,5%.</li>
-<li><strong>Fechar o loop pós-clique.</strong> Custo por clique qualificado: R$ 1,33 (muito competitivo). Conectar Meta Ads ao CRM para medir o CPV (custo por visita ao resort).</li>
-</ol>
-<h2>Conclusão</h2>
-<p>Julho de 2026 consolidou o segmento de Servidores Públicos como a principal alavanca de performance do Guará Forest Resort no Meta Ads: menor CPC, maior CTR, e credencial institucional que pré-qualifica o lead antes do clique. Com R$ 5.650,17 investidos e 4.098 cliques qualificados gerados em 22 dias, a conta opera em patamar Ótimo. Para agosto: concentrar budget nos Servidores, reativar o Topo com o vídeo do Lago, e fechar o loop de medição com o dado de agendamento real.</p>`
+  funil_msg:{alcance:'—',cliques:'—',conversas:'649',novos:'649',insight:'<span class="fi-hl">R$ 2,80/conversa</span> — consistente para resort de alto padrão. Campanha [FUNCIONÁRIOS][01] (R$ 2,58) é a mais eficiente. [ICP RÍGIDO] (R$ 3,89) tem CPR 51% maior — revisar criativo ou segmentação.'},
+  relatorio:'<h2>Sumário Executivo</h2><p>O Guará Forest Resort investiu R$ 1.820 em anúncios entre 16 e 22 de julho, gerando <strong>649 novas conversas via WhatsApp</strong> a R$ 2,80 por contato. A campanha principal [FUNCIONÁRIOS][01] respondeu por 76% do investimento e <strong>498 conversas a R$ 2,58</strong> — o melhor CPR (custo por resultado) da conta. Semana sólida, sem ponto crítico de atenção.</p><h2>Resultado por Frente</h2><h3>Captação via WhatsApp — Fundo MSG</h3><table><tr><th>Campanha</th><th>Invest.</th><th>Conversas</th><th>CPR</th></tr><tr><td>[FUNCIONÁRIOS][01]</td><td>R$ 1.286</td><td>498</td><td>R$ 2,58</td></tr><tr><td>[FUNCIONÁRIOS][02]</td><td>R$ 215</td><td>69</td><td>R$ 3,11</td></tr><tr><td>[ICP RÍGIDO]</td><td>R$ 319</td><td>82</td><td>R$ 3,89</td></tr><tr><td><strong>Total</strong></td><td><strong>R$ 1.820</strong></td><td><strong>649</strong></td><td><strong>R$ 2,80</strong></td></tr></table><p><em>Por que isso importa:</em> com 649 contatos em uma semana, a equipe de atendimento tem pipeline suficiente para sustentar as metas de ocupação do resort.</p><h2>Winners do Período</h2><ul><li><strong>[FUNCIONÁRIOS][01]</strong>: CPR R$ 2,58 — melhor campanha ativa ⭐</li></ul><h2>Oportunidades Identificadas</h2><ol><li>Aumentar verba em [FUNCIONÁRIOS][01] — CPR mais baixo, maior volume</li><li>Revisar segmentação de [ICP RÍGIDO] — CPR 51% mais alto que [01]</li><li>Reativar Topo como aquecimento — winner LANÇAMENTO DO LAGO (CPM R$ 4,80) está pausado</li><li>Coletar taxa de conversão do atendimento (conversas → reservas)</li></ol><h2>Conclusão</h2><p>Semana estável: 649 conversas com CPR médio de R$ 2,80. Próxima alavanca: aumentar verba na campanha [01] e reativar Topo para ampliar alcance.</p>'
 };
-
 document.getElementById('d-cli').textContent=_D.meta.cliente;
 document.getElementById('d-meta').textContent=_D.meta.conta+' · Gestor: '+_D.meta.gestor;
 document.getElementById('d-per').textContent=_D.meta.periodo;
 document.getElementById('ft-l').textContent='Gerado em '+_D.meta.gerado;
 document.getElementById('ft-r').textContent='Gestor: '+_D.meta.gestor+' · Dreams';
 document.getElementById('d-ins-txt').innerHTML=_D.insight.txt;
-document.getElementById('d-ins-stats').innerHTML=_D.insight.stats.map(function(s){
-  return '<div><div class="is-label">'+s[0]+'</div><div class="is-val">'+s[1]+'</div></div>';
-}).join('');
-_D.gkpis.forEach(function(k,i){
-  document.getElementById('kl'+i).textContent=k.label;
-  var v=document.getElementById('kv'+i);
-  v.textContent=k.value;v.style.color=k.color;
-  document.getElementById('ks'+i).textContent=k.sub;
-});
-
-document.getElementById('gcV').innerHTML=_D.gcards.map(function(c){
-  return '<div class="gc-card" style="border-color:'+c.color+'33">'
-    +'<div class="gc-bar" style="background:'+c.color+'"></div>'
-    +'<div class="gc-head"><div class="gc-title" style="color:'+c.color+'">'+c.icon+' '+c.label
-      +'<span style="font-size:8px;font-weight:400;color:var(--t3);margin-left:6px;font-family:\'IBM Plex Mono\',monospace">'+c.camps+'</span>'
-    +'</div><span class="gc-invest">'+c.invest+'</span></div>'
-    +'<div class="gc-main"><div><div class="gc-num" style="color:'+c.color+'">'+c.m+'</div><div class="gc-num-l">'+c.ml+'</div></div>'
-    +'<div><div class="gc-cpr">'+c.cpr+'</div><div class="gc-cpr-l">'+c.cprl+'</div></div></div>'
-    +'<div class="gc-row"><div><div class="gc-sv">'+c.pct+'</div><div class="gc-sl">do invest.</div></div>'
-    +'<div><div class="gc-sv">'+c.s1+'</div><div class="gc-sl">'+c.s1l+'</div></div>'
-    +'<div><div class="gc-sv">'+c.s2+'</div><div class="gc-sl">'+c.s2l+'</div></div></div>'
-  +'</div>';
-}).join('');
-
+document.getElementById('d-ins-stats').innerHTML=_D.insight.stats.map(function(s){return '<div><div class="is-label">'+s[0]+'</div><div class="is-val">'+s[1]+'</div></div>';}).join('');
+_D.gkpis.forEach(function(k,i){document.getElementById('kl'+i).textContent=k.label;var v=document.getElementById('kv'+i);v.textContent=k.value;v.style.color=k.color;document.getElementById('ks'+i).textContent=k.sub;});
+document.getElementById('gcV').innerHTML=_D.gcards.map(function(c){return '<div class="gc-card" style="border-color:'+c.color+'33"><div class="gc-bar" style="background:'+c.color+'"></div><div class="gc-head"><div class="gc-title" style="color:'+c.color+'">'+c.icon+' '+c.label+'<span style="font-size:8px;font-weight:400;color:var(--t3);margin-left:6px;font-family:\'IBM Plex Mono\',monospace">'+c.camps+'</span></div><span class="gc-invest">'+c.invest+'</span></div><div class="gc-main"><div><div class="gc-num" style="color:'+c.color+'">'+c.m+'</div><div class="gc-num-l">'+c.ml+'</div></div><div><div class="gc-cpr">'+c.cpr+'</div><div class="gc-cpr-l">'+c.cprl+'</div></div></div><div class="gc-row"><div><div class="gc-sv">'+c.pct+'</div><div class="gc-sl">do invest.</div></div><div><div class="gc-sv">'+c.s1+'</div><div class="gc-sl">'+c.s1l+'</div></div><div><div class="gc-sv">'+c.s2+'</div><div class="gc-sl">'+c.s2l+'</div></div></div></div>';}).join('');
 Chart.defaults.font.family="'IBM Plex Mono',monospace";Chart.defaults.color='#8899AA';
 var TT={backgroundColor:'#fff',titleColor:'#0F1724',bodyColor:'#0F1724',borderColor:'#D8DEE9',borderWidth:1,padding:10};
-new Chart(document.getElementById('cPie'),{
-  type:'doughnut',
-  data:{labels:_D.pie.labels,datasets:[{data:_D.pie.data,backgroundColor:_D.pie.cores,borderWidth:0,spacing:3}]},
-  options:{responsive:true,maintainAspectRatio:false,cutout:'60%',plugins:{legend:{display:false},tooltip:{...TT,callbacks:{label:function(ctx){return ctx.label+': R$ '+ctx.parsed.toLocaleString('pt-BR',{minimumFractionDigits:2});}}}}}
-});
+new Chart(document.getElementById('cPie'),{type:'doughnut',data:{labels:_D.pie.labels,datasets:[{data:_D.pie.data,backgroundColor:_D.pie.cores,borderWidth:0,spacing:3}]},options:{responsive:true,maintainAspectRatio:false,cutout:'60%',plugins:{legend:{display:false},tooltip:{...TT,callbacks:{label:function(ctx){return ctx.label+': R$ '+ctx.parsed.toLocaleString('pt-BR',{minimumFractionDigits:2});}}}}}});
 document.getElementById('pieSub').textContent='Por estágio do funil · '+_D.pie.total+' total';
-document.getElementById('pieLg').innerHTML=_D.pie.labels.map(function(l,i){
-  if(!_D.pie.data[i])return'';
-  return '<div><div style="display:flex;align-items:center;justify-content:center;gap:4px;margin-bottom:3px">'
-    +'<span style="width:7px;height:7px;border-radius:50%;background:'+_D.pie.cores[i]+'"></span>'
-    +'<span class="pl-lbl">'+l+'</span></div>'
-    +'<div class="pl-v" style="color:'+_D.pie.cores[i]+'">'+_D.pie.vals[i]+'</div>'
-    +'<div class="pl-p">'+_D.pie.pcts[i]+'</div></div>';
-}).join('');
-
-var seqs=[['FUNDO_VEN','ven','Fundo — Vendas','#1877F2'],['FUNDO_MSG','msg','Fundo — Contato','#7B2FBE'],['MEIO','meio','Meio — Tráfego','#0077A8'],['TOPO','topo','Topo — Awareness','#E08C00']];
-document.getElementById('tab-campanhas').innerHTML=seqs.map(function(s){
-  var cs=_D.camps[s[0]];if(!cs||!cs.length)return'';
-  return '<div class="cg-sect"><div class="cg-hdr"><span class="badge '+s[1]+'">'+s[1].toUpperCase()+'</span>'
-    +'<span class="cg-stitle">'+s[2]+'</span><span class="cg-sub">'+cs.length+' campanha'+(cs.length>1?'s':'')+'</span></div>'
-    +cs.map(function(c){
-      return '<div class="cr"><div class="cr-name">'+c.name+'</div>'
-        +'<div class="cr-bar"><div class="cr-fill" style="width:'+c.bar_pct+'%;background:'+s[3]+'"></div></div>'
-        +'<div class="cr-stats"><div><div class="cs-lbl">'+c.result_label+'</div><div class="cs-v" style="color:'+s[3]+'">'+c.result+'</div></div>'
-        +'<div><div class="cs-lbl">'+c.cpr_label+'</div><div class="cs-v" style="color:var(--ylw)">'+c.cpr_str+'</div></div>'
-        +(c.roas_str?'<div><div class="cs-lbl">ROAS</div><div class="cs-v" style="color:var(--grn)">'+c.roas_str+'</div></div>':'<div></div>')
-        +'</div></div>';
-    }).join('')+'</div>';
-}).join('')||'<p style="color:var(--t4);padding:14px;font-size:12px">Sem dados.</p>';
-
-if(_D.daily.length){
-  var mx=Math.max.apply(null,_D.daily.map(function(r){return r.invest;}));
-  var _tp=_D.meta.tipo||'mixed';
-  document.getElementById('tab-dia').innerHTML=_D.daily.map(function(r){
-    var _cpl=r.conversas>0?'R$ '+(r.invest/r.conversas).toLocaleString('pt-BR',{minimumFractionDigits:2}):'—';
-    return '<div class="dr"><div class="dr-date">'+r.label+'</div>'
-      +'<div class="dr-bar"><div class="dr-fill" style="width:'+(r.invest/mx*100).toFixed(1)+'%"></div></div>'
-      +'<div class="dr-stats"'+(_tp==='msg'?' style="grid-template-columns:repeat(3,1fr)"':'')+' >'
-      +'<div><div class="ds-lbl">Invest.</div><div class="ds-v">R$ '+r.invest.toLocaleString('pt-BR',{minimumFractionDigits:2})+'</div></div>'
-      +'<div><div class="ds-lbl">Cliques</div><div class="ds-v" style="color:var(--pur)">'+r.conversas+'</div></div>'
-      +(_tp==='msg'
-        ?'<div><div class="ds-lbl">CPC</div><div class="ds-v" style="color:var(--ylw)">'+_cpl+'</div></div>'
-        :'<div><div class="ds-lbl">Compras</div><div class="ds-v" style="color:var(--blue)">'+r.compras+'</div></div>'
-        +'<div><div class="ds-lbl">Receita</div><div class="ds-v" style="color:var(--grn)">R$ '+r.receita.toLocaleString('pt-BR',{minimumFractionDigits:0})+'</div></div>'
-      )
-      +'</div></div>';
-  }).join('');
-}else{document.getElementById('tab-dia').innerHTML='<p style="color:var(--t4);padding:14px;font-size:12px">Sem dados diários.</p>';}
-
-(function(){
-  var SC={b:'#1877F2',t:'#0077A8',y:'#E08C00',p:'#7B2FBE',g:'#00934a'};
-  var SF={b:'#EAF1FF',t:'#E0F4FA',y:'#FFF6E0',p:'#F3EAFF',g:'#E6F5EE'};
-  function s(ck,ic,nm,od,vl,rt,rl){
-    return '<div class="fn-s" style="border-left:3px solid '+SC[ck]+'">'
-      +'<div style="width:26px;height:26px;border-radius:7px;background:'+SF[ck]+';display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0">'+ic+'</div>'
-      +'<div style="flex:1;min-width:0"><div class="fn-sn">'+nm+'</div><div class="fn-so">'+od+'</div></div>'
-      +'<div class="fn-sv" style="color:'+SC[ck]+'">'+vl+'</div>'
-      +'<div class="fn-rate"><div class="fn-rv">'+rt+'</div><div class="fn-rl">'+rl+'</div></div>'
-    +'</div>';
-  }
-  function p(a,b){return b>0?Math.round(parseInt(a)/parseInt(b)*100):0;}
-  var fm=_D.funil_msg;
-  var _tp=_D.meta.tipo||'mixed';
-  var _fhtml='';
-  if(_tp!=='msg'){
-    var fv=_D.funil_ven;
-    _fhtml+='<div class="fn"><div class="fn-hdr"><div class="fn-icon" style="background:#EAF1FF;color:#1877F2">🛒</div>'
-      +'<div><div class="fn-title">Funil — Vendas (VEN)</div><div class="fn-sub">Do alcance à compra</div></div></div>'
-      +s('b','📣','Alcance','Pessoas impactadas',fv.alcance,'—','entrada')
-      +s('t','🖱️','Cliques','Tráfego gerado',fv.cliques,p(fv.cliques,fv.alcance)+'%','CTR')
-      +s('y','🌐','Visitas ao Site','Qualificação',fv.visitas,p(fv.visitas,fv.cliques)+'%','de cliques')
-      +s('p','🛒','Adições ao Carrinho','Intenção de compra',fv.carrinho,p(fv.carrinho,fv.visitas)+'%','de visitas')
-      +s('y','📝','Checkout Iniciado','Comprometimento',fv.checkout,p(fv.checkout,fv.carrinho)+'%','do carrinho')
-      +s('g','✅','Compras Finalizadas','Conversão final',fv.compras,p(fv.compras,fv.checkout)+'%','do checkout')
-      +(fv.insight?'<div class="fn-ins">'+fv.insight+'</div>':'')
-      +'</div>';
-  }
-  if(_tp!=='ven'){
-    _fhtml+='<div class="fn"><div class="fn-hdr"><div class="fn-icon" style="background:#F3EAFF;color:#7B2FBE">💬</div>'
-      +'<div><div class="fn-title">Funil — Contato (CON)</div><div class="fn-sub">Do alcance ao clique qualificado</div></div></div>'
-      +s('p','📣','Alcance','Pessoas impactadas',fm.alcance,'—','entrada')
-      +s('t','🖱️','Cliques','Tráfego total gerado',fm.cliques,p(fm.cliques,fm.alcance)+'%','CTR')
-      +s('g','🔗','Cliques Qualificados','Outbound — agendamento',fm.conversas,p(fm.conversas,fm.cliques)+'%','de cliques')
-      +s('y','🆕','Novos Contatos','CPL real — não rastreado',fm.novos,'—','próx. relatório')
-      +(fm.insight?'<div class="fn-ins">'+fm.insight+'</div>':'')
-      +'</div>';
-  }
-  document.getElementById('tab-funil').innerHTML=_fhtml;
-})();
-
-document.querySelectorAll('.tb').forEach(function(b){
-  b.addEventListener('click',function(){
-    document.querySelectorAll('.tb').forEach(function(x){x.classList.remove('on');});
-    document.querySelectorAll('.tc').forEach(function(x){x.classList.remove('on');});
-    b.classList.add('on');
-    var el=document.getElementById('tab-'+b.dataset.t);
-    if(el)el.classList.add('on');
-  });
-});
-
-// Report view
-var vd=document.getElementById('viewDash');
-var vr=document.getElementById('viewRep');
+document.getElementById('pieLg').innerHTML=_D.pie.labels.map(function(l,i){if(!_D.pie.data[i])return'';return '<div><div style="display:flex;align-items:center;justify-content:center;gap:4px;margin-bottom:3px"><span style="width:7px;height:7px;border-radius:50%;background:'+_D.pie.cores[i]+'"></span><span class="pl-lbl">'+l+'</span></div><div class="pl-v" style="color:'+_D.pie.cores[i]+'">'+_D.pie.vals[i]+'</div><div class="pl-p">'+_D.pie.pcts[i]+'</div></div>';}).join('');
+var seqs=[['FUNDO_VEN','ven','Fundo — Vendas','#1877F2'],['FUNDO_MSG','msg','Fundo — MSG','#7B2FBE'],['MEIO','meio','Meio — Tráfego','#0077A8'],['TOPO','topo','Topo — Awareness','#E08C00']];
+document.getElementById('tab-campanhas').innerHTML=seqs.map(function(s){var cs=_D.camps[s[0]];if(!cs||!cs.length)return'';return '<div class="cg-sect"><div class="cg-hdr"><span class="badge '+s[1]+'">'+s[1].toUpperCase()+'</span><span class="cg-stitle">'+s[2]+'</span><span class="cg-sub">'+cs.length+' campanha'+(cs.length>1?'s':'')+'</span></div>'+cs.map(function(c){return '<div class="cr"><div class="cr-name">'+c.name+'</div><div class="cr-bar"><div class="cr-fill" style="width:'+c.bar_pct+'%;background:'+s[3]+'"></div></div><div class="cr-stats"><div><div class="cs-lbl">'+c.result_label+'</div><div class="cs-v" style="color:'+s[3]+'">'+c.result+'</div></div><div><div class="cs-lbl">'+c.cpr_label+'</div><div class="cs-v" style="color:var(--ylw)">'+c.cpr_str+'</div></div>'+(c.roas_str?'<div><div class="cs-lbl">ROAS</div><div class="cs-v" style="color:var(--grn)">'+c.roas_str+'</div></div>':'<div></div>')+'</div></div>';}).join('')+'</div>';}).join('')||'<p style="color:var(--t4);padding:14px;font-size:12px">Sem dados.</p>';
+if(_D.daily.length){var mx=Math.max.apply(null,_D.daily.map(function(r){return r.invest;}));document.getElementById('tab-dia').innerHTML=_D.daily.map(function(r){var _cpl=r.conversas>0?'R$ '+(r.invest/r.conversas).toLocaleString('pt-BR',{minimumFractionDigits:2}):'—';return '<div class="dr"><div class="dr-date">'+r.label+'</div><div class="dr-bar"><div class="dr-fill" style="width:'+(r.invest/mx*100).toFixed(1)+'%"></div></div><div class="dr-stats" style="grid-template-columns:repeat(3,1fr)"><div><div class="ds-lbl">Invest.</div><div class="ds-v">R$ '+r.invest.toLocaleString('pt-BR',{minimumFractionDigits:2})+'</div></div><div><div class="ds-lbl">Conv.</div><div class="ds-v" style="color:var(--pur)">'+r.conversas+'</div></div><div><div class="ds-lbl">CPL</div><div class="ds-v" style="color:var(--ylw)">'+_cpl+'</div></div></div></div>';}).join('');}else{document.getElementById('tab-dia').innerHTML='<p style="color:var(--t4);padding:14px;font-size:12px">Sem dados.</p>';}
+(function(){var SC={b:'#1877F2',t:'#0077A8',y:'#E08C00',p:'#7B2FBE',g:'#00934a'};var SF={b:'#EAF1FF',t:'#E0F4FA',y:'#FFF6E0',p:'#F3EAFF',g:'#E6F5EE'};function s(ck,ic,nm,od,vl,rt,rl){return '<div class="fn-s" style="border-left:3px solid '+SC[ck]+'"><div style="width:26px;height:26px;border-radius:7px;background:'+SF[ck]+';display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0">'+ic+'</div><div style="flex:1;min-width:0"><div class="fn-sn">'+nm+'</div><div class="fn-so">'+od+'</div></div><div class="fn-sv" style="color:'+SC[ck]+'">'+vl+'</div><div class="fn-rate"><div class="fn-rv">'+rt+'</div><div class="fn-rl">'+rl+'</div></div></div>';}function p(a,b){return b>0?Math.round(parseInt(a)/parseInt(b)*100):0;}var fm=_D.funil_msg;document.getElementById('tab-funil').innerHTML='<div class="fn"><div class="fn-hdr"><div class="fn-icon" style="background:#F3EAFF;color:#7B2FBE">💬</div><div><div class="fn-title">Funil — Mensagens (MSG)</div><div class="fn-sub">Do anúncio à conversa</div></div></div>'+s('g','💬','Conversas Iniciadas','Leads via WhatsApp',fm.conversas,'—','entrada')+s('y','🆕','Novos Contatos','Primeira conversa',fm.novos,p(fm.novos,fm.conversas)+'%','das conversas')+(fm.insight?'<div class="fn-ins">'+fm.insight+'</div>':'')+'</div>';})();
+document.querySelectorAll('.tb').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.tb').forEach(function(x){x.classList.remove('on');});document.querySelectorAll('.tc').forEach(function(x){x.classList.remove('on');});b.classList.add('on');var el=document.getElementById('tab-'+b.dataset.t);if(el)el.classList.add('on');});});
+var vd=document.getElementById('viewDash');var vr=document.getElementById('viewRep');
 document.getElementById('repCli').textContent=_D.meta.cliente;
 document.getElementById('repInfo').textContent=_D.meta.periodo+' · Conta '+_D.meta.conta+' · Gestor: '+_D.meta.gestor+' · Gerado em '+_D.meta.gerado;
 if(_D.relatorio)document.getElementById('repContent').innerHTML=_D.relatorio;
 window.onbeforeprint=function(){vr.classList.add('on');};
 document.getElementById('btnRep').addEventListener('click',function(){vd.style.display='none';vr.classList.add('on');});
 document.getElementById('btnBack').addEventListener('click',function(){vd.style.display='';vr.classList.remove('on');});
-
-// PDF + Share
-var _sl=(_D.meta.link&&_D.meta.link!=='')?_D.meta.link:window.location.href;
-var _st=_D.meta.cliente+' — Relatório '+_D.meta.periodo;
+var _sl=(_D.meta.link&&_D.meta.link!=='')?_D.meta.link:window.location.href;var _st=_D.meta.cliente+' — Relatório '+_D.meta.periodo;
 function _print(){vr.classList.add('on');window.print();}
 function _wa(){window.open('https://wa.me/?text='+encodeURIComponent(_st+'\n'+_sl));}
 function _email(){window.open('mailto:?subject='+encodeURIComponent(_st)+'&body='+encodeURIComponent('Acesse o relatório:\n'+_sl));}
-function _share(menu){
-  if(navigator.share){navigator.share({title:_st,url:_sl}).catch(function(){});}
-  else{menu.classList.toggle('on');}
-}
-document.addEventListener('click',function(e){
-  var ds=document.getElementById('dropShare'),dr=document.getElementById('dropShareRep');
-  if(ds&&!ds.contains(e.target))document.getElementById('shareMenu').classList.remove('on');
-  if(dr&&!dr.contains(e.target))document.getElementById('shareMenuRep').classList.remove('on');
-});
-document.getElementById('btnDl').addEventListener('click',_print);
-document.getElementById('btnDlRep').addEventListener('click',_print);
-document.getElementById('btnShare').addEventListener('click',function(){_share(document.getElementById('shareMenu'));});
-document.getElementById('btnShareRep').addEventListener('click',function(){_share(document.getElementById('shareMenuRep'));});
-document.getElementById('shareWA').addEventListener('click',_wa);
-document.getElementById('shareEmail').addEventListener('click',_email);
-document.getElementById('shareWARep').addEventListener('click',_wa);
-document.getElementById('shareEmailRep').addEventListener('click',_email);
+function _share(menu){if(navigator.share){navigator.share({title:_st,url:_sl}).catch(function(){});}else{menu.classList.toggle('on');}}
+document.addEventListener('click',function(e){var ds=document.getElementById('dropShare'),dr=document.getElementById('dropShareRep');if(ds&&!ds.contains(e.target))document.getElementById('shareMenu').classList.remove('on');if(dr&&!dr.contains(e.target))document.getElementById('shareMenuRep').classList.remove('on');});
+document.getElementById('btnDl').addEventListener('click',_print);document.getElementById('btnDlRep').addEventListener('click',_print);
+document.getElementById('btnShare').addEventListener('click',function(){_share(document.getElementById('shareMenu'));});document.getElementById('btnShareRep').addEventListener('click',function(){_share(document.getElementById('shareMenuRep'));});
+document.getElementById('shareWA').addEventListener('click',_wa);document.getElementById('shareEmail').addEventListener('click',_email);document.getElementById('shareWARep').addEventListener('click',_wa);document.getElementById('shareEmailRep').addEventListener('click',_email);
 </script>
 </body>
 </html>
