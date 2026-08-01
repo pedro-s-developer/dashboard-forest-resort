@@ -553,7 +553,7 @@ function _dailyForSegment(D, seg, inicio, fim){
       if(!byDate[d.data]) byDate[d.data] = {spend:0,reach:0,impr:0,results:0,compras:0,receita:0,view_content:0,add_to_cart:0,init_checkout:0,clicks_wa:0};
       var b = byDate[d.data];
       b.spend += d.spend||0; b.reach += d.reach||0; b.impr += d.impr||0;
-      b.results += d.results||0; b.compras += d.compras||0; b.receita += d.receita||0;
+      b.results += (seg==='FUNDO_MSG'?(d.conversas||d.results||0):(d.results||0)); b.compras += d.compras||0; b.receita += d.receita||0;
       b.view_content += d.view_content||0; b.add_to_cart += d.add_to_cart||0;
       b.init_checkout += d.init_checkout||0; b.clicks_wa += d.clicks_wa||0;
     });
@@ -710,7 +710,7 @@ function renderObjCards(D, inicio, fim){
       if(c.funil==='MEIO'){ extras.MEIO.impr += d.impr||0; extras.MEIO.clicks += d.results||0; }
       if(c.funil==='FUNDO_MSG'){ extras.FUNDO_MSG.clicks_wa += d.clicks_wa||0; }
       campSpend += d.spend||0;
-      campRes += d.results||0;
+      campRes += (c.funil==='FUNDO_MSG'?(d.conversas||d.results||0):(d.results||0));
     });
     if(c.funil==='FUNDO_MSG' && campRes>0){
       var cpr = campSpend/campRes;
@@ -895,7 +895,7 @@ function renderFunilTab(D, inicio, fim){
         v.receita+=d.receita||0;
       } else if(c.funil==='FUNDO_MSG'){
         m.reach+=d.reach||0; m.clicks_wa+=d.clicks_wa||0;
-        m.results+=d.results||0; m.spend+=d.spend||0;
+        m.results+=(d.conversas||d.results||0); m.spend+=d.spend||0;
       }
     });
   });
@@ -1077,7 +1077,7 @@ var centerLabelPlugin={
 };
 var cPie=new Chart(document.getElementById('chartPie'),{
   type:'doughnut',
-  data:{labels:['Fundo VEN','Fundo MSG','Meio','Topo'],datasets:[{data:[5514.49,2865.15,1925.86,1740.72],backgroundColor:['#1877F2','#7B2FBE','#0077A8','#E08C00'],borderWidth:0,spacing:3}]},
+  data:{labels:['Fundo VEN','Fundo MSG','Meio','Topo'],datasets:[{data:[0,0,0,0],backgroundColor:['#1877F2','#7B2FBE','#0077A8','#E08C00'],borderWidth:0,spacing:3}]},
   plugins:[centerLabelPlugin],
   options:{responsive:true,maintainAspectRatio:false,cutout:'60%',plugins:{legend:{display:false},tooltip:{...TT,callbacks:{label:function(ctx){return ctx.label+': R$ '+ctx.parsed.toLocaleString('pt-BR',{minimumFractionDigits:2});}}}}}
 });
@@ -1091,6 +1091,7 @@ new Chart(document.getElementById('chartReceita'),{
 });
 
 // ── DAY TABLE ─────────────────────────────────────────────────
+if(_D.meta.tipo==='msg'){var _rc=document.getElementById('chartReceita');if(_rc&&_rc.closest){var _rcc=_rc.closest('.chart-card');if(_rcc)_rcc.style.display='none';}}
 (function(){
   var daily=_D.DAILY;
   var maxInvest=Math.max.apply(null,daily.map(function(r){return r.invest;}));
@@ -1196,7 +1197,7 @@ function applyFilter(s){
   });
   // chart titles
   document.getElementById('chart1Title').textContent='Evolução — '+sk.legend;
-  document.getElementById('chart1Sub').textContent='Investido diário × '+fd.result_label+' realizadas';
+  document.getElementById('chart1Sub').textContent='Investido diário × '+fd.result_label+' '+({TOPO:'atingido',MEIO:'realizadas',FUNDO_MSG:'iniciadas',FUNDO_VEN:'realizadas'}[s]||'realizadas');
   document.getElementById('lgResult').textContent=fd.result_label;
   document.getElementById('lgCpr').textContent=fd.cpr_label;
   document.getElementById('cprChartTitle').textContent=fd.cpr_label+' diário';
@@ -1336,6 +1337,11 @@ function renderRange(startIso,endIso){
     {label:'Compras',value:_fmtN(ven.totRes),color:'var(--blue)',sub:'em '+nDays+' dias'},
     {label:'Alcance',value:_fmtN(topo.totRes),color:'var(--text)',sub:'pessoas impactadas'},
   ];
+  if(_D.meta.tipo==='msg'){window._geralKpis=[
+    {label:'Investido total',value:'R$ '+_fmtN(totInv),color:'var(--text)',sub:nDays+' dias analisados'},
+    {label:'Conversas',value:_fmtN(msg.totRes),color:'#7B2FBE',sub:'via WhatsApp'},
+    {label:'Custo/Conversa',value:msg.totRes>0?_fmtR(msg.totInv/msg.totRes):'-',color:'#7B2FBE',sub:'custo por resultado'},
+    {label:'Alcance',value:_fmtN(msg.totReach||topo.totRes),color:'var(--text)',sub:'pessoas impactadas'}];}
 
   // ── Update hero texts dynamically for ALL segments ───────
   var hlR=ven.totInv>0?'R$ '+_fmtN(ven.totRec):'—';
@@ -1381,6 +1387,7 @@ function renderRange(startIso,endIso){
       var pEl=item.querySelector('.pie-leg-pct');
       if(vEl) vEl.textContent='R$ '+_fmtN(sg.totInv);
       if(pEl) pEl.textContent=pct;
+      item.style.display=sg.totInv>0?'':'none';
     });
     // Pie subtitle
     var pSub=document.querySelector('.chart-card:nth-child(2) .chart-sub');
