@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Guará Forest Resort — Performance — Jul 2026</title>
+<title>Guará Forest Resort — Performance — Ago 2026</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
@@ -16,7 +16,7 @@
   --green:#00934a;--green-bg:#E6F5EE;
   --yellow:#E08C00;--yellow-bg:#FFF6E0;
   --teal:#0077A8;--teal-bg:#E0F4FA;
-  --purple:#18AEC6;--purple-bg:#E2F7FA;
+  --purple:#7B2FBE;--purple-bg:#F3EAFF;
   --red:#C0392B;--red-bg:#FEF0EF;
 }
 body{background:var(--bg);color:var(--text);font-family:'Poppins',sans-serif;padding:16px 14px;min-height:100vh;}
@@ -28,7 +28,7 @@ body{background:var(--bg);color:var(--text);font-family:'Poppins',sans-serif;pad
 @keyframes stageIn{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
 
 /* ── HEADER ── */
-.header{padding-bottom:14px;border-bottom:1px solid var(--border);margin-bottom:14px;position:relative;padding-top:8px;}
+.header{padding-bottom:14px;border-bottom:1px solid var(--border);margin-bottom:14px;}
 .h-eyebrow{display:flex;align-items:center;gap:6px;margin-bottom:6px;flex-wrap:wrap;}
 .h-tag{font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:1.5px;color:var(--text4);}
 .h-tag.blue{color:var(--blue);}
@@ -87,8 +87,8 @@ body{background:var(--bg);color:var(--text);font-family:'Poppins',sans-serif;pad
 .panel-row .panel-sub{font-size:9px;color:var(--text3);font-family:'IBM Plex Mono',monospace;}
 .chart-legend{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:6px;font-size:9px;color:var(--text3);}
 .chart-legend span{display:flex;align-items:center;gap:4px;}
-.lg-sw-bar{width:11px;height:8px;border-radius:2px;background:#E2F7FA;border:1px solid #18AEC6;}
-.lg-sw-line{width:14px;height:2px;background:#18AEC6;border-radius:1px;}
+.lg-sw-bar{width:11px;height:8px;border-radius:2px;background:#E8D7F7;border:1px solid #7B2FBE;}
+.lg-sw-line{width:14px;height:2px;background:#7B2FBE;border-radius:1px;}
 .lg-sw-cpr{width:14px;height:2px;background:#E08C00;border-radius:1px;}
 .lg-sw-rec{width:14px;height:2px;background:#00934a;border-radius:1px;}
 .panel-divider{height:14px;}
@@ -112,7 +112,7 @@ body{background:var(--bg);color:var(--text);font-family:'Poppins',sans-serif;pad
 /* ── OBJ CARDS ── */
 .obj-grid{display:grid;grid-template-columns:1fr;gap:10px;}
 .obj-card{background:var(--white);border:1px solid var(--border);border-radius:14px;position:relative;overflow:hidden;}
-.obj-card.msg{background:var(--purple-bg);border-color:rgba(24,174,198,0.3);}
+.obj-card.msg{background:var(--purple-bg);border-color:rgba(123,47,190,0.3);}
 .obj-card.ven{background:var(--blue-bg);border-color:rgba(24,119,242,0.3);}
 .obj-bar{position:absolute;top:0;left:0;right:0;height:4px;}
 .obj-bar.msg{background:var(--purple);}.obj-bar.ven{background:var(--blue);}
@@ -143,7 +143,7 @@ body{background:var(--bg);color:var(--text);font-family:'Poppins',sans-serif;pad
 .camp-group-badge{font-size:9px;font-weight:900;letter-spacing:1px;padding:3px 8px;border-radius:5px;text-transform:uppercase;}
 .camp-group-badge.topo{background:#FFF6E0;color:#E08C00;}
 .camp-group-badge.meio{background:#E0F4FA;color:#0077A8;}
-.camp-group-badge.fundo-msg{background:#E2F7FA;color:#18AEC6;}
+.camp-group-badge.fundo-msg{background:#F3EAFF;color:#7B2FBE;}
 .camp-group-badge.fundo-ven{background:#EAF1FF;color:#1877F2;}
 .camp-group-title{font-size:12px;font-weight:800;color:var(--text);}
 .camp-group-sub{font-size:9px;color:var(--text3);font-family:'IBM Plex Mono',monospace;margin-top:2px;}
@@ -200,12 +200,12 @@ body{background:var(--bg);color:var(--text);font-family:'Poppins',sans-serif;pad
 .funnel-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid var(--border-soft);gap:8px;}
 .funnel-header-left{display:flex;align-items:center;gap:8px;}
 .funnel-type-icon{width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;}
-.funnel-type-icon.msg{background:#E2F7FA;color:#18AEC6;}
+.funnel-type-icon.msg{background:#F3EAFF;color:#7B2FBE;}
 .funnel-type-icon.ven{background:#EAF1FF;color:#1877F2;}
 .funnel-title{font-size:12px;font-weight:800;line-height:1.2;}
 .funnel-subtitle{font-size:10px;color:var(--text3);margin-top:2px;}
 .funnel-tag{font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:700;padding:3px 7px;border-radius:5px;flex-shrink:0;}
-.funnel-tag.msg{background:#E2F7FA;color:#18AEC6;}
+.funnel-tag.msg{background:#F3EAFF;color:#7B2FBE;}
 .funnel-tag.ven{background:#EAF1FF;color:#1877F2;}
 .funnel-reach-banner{display:flex;align-items:center;gap:10px;background:#F7F8FA;border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin-bottom:12px;}
 .funnel-reach-label{font-size:10px;color:var(--text4);font-weight:600;text-transform:uppercase;letter-spacing:0.5px;}
@@ -228,7 +228,7 @@ body{background:var(--bg);color:var(--text);font-family:'Poppins',sans-serif;pad
 .s-blue{--stage-color:#1877F2;--stage-soft:#EAF1FF;}
 .s-teal{--stage-color:#0077A8;--stage-soft:#E0F4FA;}
 .s-yellow{--stage-color:#E08C00;--stage-soft:#FFF6E0;}
-.s-purple{--stage-color:#18AEC6;--stage-soft:#E2F7FA;}
+.s-purple{--stage-color:#7B2FBE;--stage-soft:#F3EAFF;}
 .s-green{--stage-color:#00934a;--stage-soft:#E6F5EE;}
 .funnel-insight{background:linear-gradient(135deg,#0F1724 0%,#1A2438 100%);border-radius:10px;padding:14px 16px;color:#fff;display:flex;align-items:flex-start;gap:12px;margin-top:14px;}
 .funnel-insight-icon{width:28px;height:28px;background:rgba(255,209,102,0.15);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#FFD166;font-size:13px;flex-shrink:0;}
@@ -338,70 +338,6 @@ body{background:var(--bg);color:var(--text);font-family:'Poppins',sans-serif;pad
 .cal-drop.open{display:flex;animation:fadeUp 0.18s ease;}
 @media(max-width:767px){
   .cal-drop{position:fixed!important;top:64px!important;left:12px!important;right:12px!important;width:auto!important;max-width:none!important;max-height:calc(100vh - 80px);overflow-y:auto;}
-  /* ── Header mobile ── */
-  .header img{height:44px!important;}
-  .h-title{font-size:20px;}
-  .h-meta{font-size:9px;}
-  .h-bottom{margin-top:8px;width:100%;display:flex;justify-content:flex-end;}
-  .h-bottom .cal-wrap{display:inline-block;width:auto;}
-  .h-bottom .cal-btn{width:auto;}
-  /* ── Action bar → rodapé via flex order ── */
-  .page{display:flex;flex-direction:column;}
-  .action-bar{order:100;flex-direction:row!important;flex-wrap:wrap;gap:6px;}
-  .action-bar .cal-btn{width:auto;}
-  #dropShare{width:auto!important;display:inline-block!important;}
-  #dropShare>#btnShare{width:auto;}
-  .footer{order:101;}
-  /* ── KPIs ── */
-  .kpi{padding:12px;}
-  .kpi-label{font-size:10px;letter-spacing:0.5px;}
-  .kpi-val{font-size:18px;}
-  .kpi-sub{font-size:10px;}
-  /* ── Insight hero ── */
-  .insight{padding:16px;}
-  .insight-text{font-size:13px;}
-  .insight-stat-label{font-size:10px;}
-  .insight-stat-val{font-size:13px;}
-  /* ── Filter / Tabs ── */
-  .filter-btn{font-size:10px;padding:6px 12px;min-height:36px;}
-  .tab-btn{font-size:10px;padding:6px 8px;min-height:36px;}
-  /* ── Section / Group labels ── */
-  .sec-title{letter-spacing:1.5px;}
-  .camp-group-title{font-size:11px;}
-  .camp-group-sub{font-size:10px;}
-  .camp-group-badge{font-size:10px;}
-  /* ── Obj cards ── */
-  .obj-body{padding:14px;}
-  .obj-num{font-size:28px;}
-  .obj-cpr{font-size:22px;}
-  .obj-sec{gap:6px;}
-  .obj-sec-val{font-size:11px;}
-  .obj-sec-label{font-size:10px;}
-  /* ── Campaign table (mobile cards) ── */
-  .t-name{font-size:11px;}
-  .t-stat-label{font-size:10px;}
-  .t-result,.t-cpr,.t-extra{font-size:12px;}
-  .tf-val{font-size:13px;}
-  .tf-label{font-size:10px;}
-  /* ── Day summary ── */
-  .day-val{font-size:16px;}
-  .day-label{font-size:10px;}
-  .day-sub{font-size:10px;}
-  /* ── Daily table: 4 cols → 2×2 ── */
-  .dt-stats{grid-template-columns:1fr 1fr;gap:6px 8px;}
-  .dt-stat-label{font-size:10px;}
-  .dt-stat-val{font-size:11px;}
-  .dt-date{font-size:10px;}
-  /* ── Funnel ── */
-  .funnel-reach-val{font-size:15px;}
-  .funnel-reach-label{font-size:10px;}
-  .stage-value{font-size:20px;}
-  .stage-rate-val{font-size:13px;}
-  .stage-name{font-size:10px;}
-  .stage-order{font-size:10px;}
-  .funnel-insight-text{font-size:11px;}
-  /* ── Footer ── */
-  .footer{flex-direction:column;align-items:flex-start;gap:4px;}
 }
 .cal-presets{display:flex;gap:5px;flex-wrap:wrap;padding:12px 14px 10px;border-bottom:1px solid var(--border-soft);}
 .cal-preset{font-family:'Poppins',sans-serif;font-size:10px;font-weight:700;padding:4px 11px;border-radius:20px;border:1.5px solid var(--border);background:transparent;color:var(--text2);cursor:pointer;transition:all 0.15s;}
@@ -429,22 +365,18 @@ body{background:var(--bg);color:var(--text);font-family:'Poppins',sans-serif;pad
 
 <!-- HEADER -->
 <div class="header">
-  <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#18AEC6 0%,#0A7080 100%);border-radius:3px 3px 0 0;"></div>
-  <div style="display:flex;align-items:center;gap:14px;">
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAA0wSURBVHhe7Z15cFPHHceVmXb6RzrNtJPpMZ30nmSaSSZtJtNJJhDShIYcHCEmEAjhLpBCIMQBk3KDucFAbHxgg2/Llu9Tvg8dtiz5vk983/Jt+ba+nd/Kki0VQv+oVzJ5nxmNn/btezKf3ffb3+57MiK9Xr9Gr9c7Ca+FfYn0ev0dCCw4JNrJslDg/48gmhOCaE4IojkhiOaEIJoTgmhOCKI5IYjmhCCaE4JoTgiiOSGI5oQgmhOCaE4IojkhiOaEIJoTgmhOPBaiK1pbcC0mChtvXceWb50gr6q0rGJ1FrVoVW0NPrp6CT/8xA6ile9AtGoFRMtexc/37MD0zIxldauyKEWPT03hoLcXRHarIXrnTYg++AdEq9+DaP2H+OO+3XCKj4Xe8iArs+hEdw0O4tV/O0C07DWI7FZh6QkHnBb7I0alQGN7q2V1m2FRie4bGcHzX+6HaPlSfOp0GRH5+cho7kBIXTs8yhvhXdGA6v5hy8NsgkUl+s3Tx/GU3Uo4xsXhqLIEz3hFQ3TeC6IzHhCdu2N4XfFBQVev5aFWZ9GIvhgVjp9sXItdUYl4NiAZT3tEYll4BtZJc7BEkoqnXSX4gZM/fucZjtr+IcvDrc6iEN3Y3Y1f7d6GjyWxWBElw6GYJFyKj4drkhQROQqW3g1PzaCufwi6qWnLw22CRSHa3vcetvoFwkVdBKdICT53voaX7b+AaPW7EL21BE/YrcK/vNwtD7MprC56eHIK3boxdrmfUBbhpKIQOe09pv0N3d24EB6CjtEJ3FQVYWu8DAcz8hBQXg9NfT12uDlDtHYlfrl3J4ZGR83ObUtYTfTQxCQSG9rgXVYHp7wKfCZVsIFMdPYORGc9sDMpm9Urqq9BfEUVXgmUQuToCdE5T4gu3IXo/F1sT1GzOlVtregc6Lf4BNvCaqInpmcwahFPW4Z0LGO4XVSFH13zxTlVCaCfwcuBCRCdcsNTLsF4zjsaomt+LNt4wskf/eMTZuewVawm+lGUavuxIjwViY3trCcvD01G0+AIZvR6xN9vxYteETimKLS5GeDDsFnRRFZLF+wz85hodafWcveiwqZFE27F1RCd90R13yC6dGN4IzgRv3cPw97kHBbnFws2LzqvU8sGR7+Keib7yRsB+LGzmMXsDyLTLavbLDYvempGj2fvReHXrhJM6w0RmX4eSFdDdNIVkupGy0NsEpsXTag6evDkVV+85BPNUsL8rl4sD02B6JgLfuoSjL4x2888FoVoom5gGJ/GyfAbjzD8wk2CVwITsCM5ByskydiTooK6Q4tBG47Zi0a0kcmZGQxY5M40SMpau+BVWouDqbkIqmzAyOSUWR1rs+hEPwoaMKPrWtA0NGK5y4ySnn7UcFzle+xEfxeaTi3Cqhtxu7AKZ3KKUdk7aFllweAuuqJ3AAEV93G3tBaqeYtHLcO6Bw5qjYMjGJs3Ve/UjSG1sZ31yPmMT8+wOJ3R3Im0pg4o27pZmJlP/cAwxFUNCK3iH1q4iSZZtFC0JjIdR2X5cJDls+1PExRsWv15ai58yustD8O6mCwU9/SZ3m+Ik2FLbBZe9o9Hw+DcbStqNFoHsc/Kw6HMPGyTKvC6WMrycCPUmK+JpdgWJ8Mn8XJTOQ+4iSZBX2flWRYjqbGd9by9DxFtF5OJolnRNOj9XZLMtg9n5cO1qNpUL625A9uTsuFTVmcqC6tpwuvBiaae7VJYhSOyfLZN5+kZHTfVXWi4iE5t6jAJehiUovk+QPTHsXM9OrymCVukSrZNAx4trRrJaOnEZ1Il9qflomt0zFRO+bZx0KP6kbXNpu2oOsM2D7iIpoWh63kVlsVm/C+iD2ZoWC8mcfRaHpaC8WlD/CbR1Ah01WjH5nrqspAktA2Psl5NjU03GQjq3YcyNKZ6Cw0X0ZsS5Gxpc2x6mgndlqjEjqRsbE6QY3+6YfF+X1ruQ0WXzg58H8VkIrS6Eb/1jMC9sjoWKmjQIzJbOrEpXoGD6RoWi+mzHGQFLGQRirYubEqYuwI6dKNYFZXObZmVi+jNUgUiapvZGkVhdx+bQqc3d+JtSQr+FiRlNwG+SFc/VDTlxiRvQ5wc3xZWsjh7TVOOy+oyOKpKWT3KOP7gFYnnfWJYg7zgHY3dyTkYGDfMFq9oyvCSdzS7XUbr2NQIz9wJR+uwzuITFwYuoh3kBSxvnQ/dXdmVlIM10ZksNdufpmZpnyXr47LQPDSCgMr7+Cozjwmq7B1gWQo13rrYLFYvq7UTG2d7NA1ydjFZbKA1Qg12VlnEGpMGXb/yerwbngb/B3zmQsBFNF3ef/GPMyvrHZvA9sRsfBidyXr0YVk+bs/LIoxQHKa6FGIuqstwIN0QV43Lpm+HprAwQaGDrpzDWXnsfGXafiwNTmJ1KT9fGmLYnk9IdaNpcF1ouIgmNicosDY6w2xSElzVgBd9Y1nvprWKF3xj0DbvUqYBi25nESsj03E+txQ3880fyaV8mLIaisHUu7/M0LA0kKAYTjd/05s7WD5uCV0plP4ZB9SFhJtompRQ6rUkSMoGqPUxWXgnNBl3SmpNA9KN/AosDZJiT0oONsbK8JYkmc0MKVTQIOqoKsF7oSnYm6pi7+nnq/5xrEEo9u9OUeGksgg9s1kHzQQpjaNw41FcY/b7GKGQQmPGQsNNtBHdDFDUO4yqgQcPQjS1KO3XoWpgblFo/t3ywWmge2IaTUM69mRS+8ijn+X4rsn2pN78/AsFd9GKynJE52YjRqNCiDwL97u7TPsaurvgkSyFa0Is1DXmIUJTV4Oo3ByEq5RIyNdgamp27Vk/g6SiQgQr5QhTKRGikKFrYIDtEivlcEmIRYQqGxNTkyhuaoREKUdCUQESCgsQopCjVTu33rKQcBU9MKrDsjMncDM+Fs6JCbgRG42KVsMzzeG5Krx97jR8MtIQrVFji8st7Pf2YvsotLx3yZE9fO6clIATwUHsfVtfHxp7urHk1HE4J8bj28QE3IyLQbO2B18H+OEbcQBCshU4KRHjQlQ4cmtrYO9zF3868Dn+6vAVjosD2MM3POAquntwELs8XC2L0aLV4o3TJ9h+6mluifFo7evFTvfb8M403IDd7uaCr/x9TMe4JifiZGgw2vp6zcoJKlt346pZmfFxsYKGBiw/fRwbnK6ipW/hY7MRrqJ7hoawzc3Fspj1ROrhgQoZToUGI7EgH3u83CEtKsRWV2dWZ5ubM9semzSEjIKG+/jC24s10iE/b7PzjU5MYNWVi8iqKDcrN3I5JgoRmlzL4gWFu+gd7rfZc3Kaulp2KdOXek5IxCyeOgQFmOpGadS4GBWBffc8mbidHrfNroYvfe+xXt09NIi116+w7WPiAFyOiWQZTv79erxw+BBuSeNNxxg5HRYCf/l/p3sLCVfRI+PjeP3UMez2cMWRAD8cFQcwifQPjyvIg72/D4uv1JMVVZU4HiJmcXpiagqrr17Ecwf3YbenO96/cBaHA/0wNT3NBtMlp44hSCGHrLIcOTXVTDSdlxrqz/YH8f7l86jt6DD9Ho+9aO3wMDY537QshmNkGFxTElHd3o7drs4Izlay2HwmXII9Xh6szmaXW1h/8zqq29vw/qXzaOoxZAvFTQ2wD/C1OOMcRY0N+OcdNzZ49o0YbhQ89qIpdGx3v21ZjLKWZvxs11aklhajtVeLsNwcnA0PxQlJMBwjwlgditE0OBIpJcXYORtGSpqaWBh5FAd87rIrhXjsRdNX1+xuXIV+9omj+VCYoAfKP7hwjok7Fy7ByisXMKDTsfTuI6crLJMYnx0MN9xyQkZ5GUvvaOBT19Wyl6qmGv26ETbghefmsFAkr6zAmmuXTFfBkUA/eKUbpva84CqaYrQ4WwH9Q1aBY/I1OOzvgyP+PnCMCGWSCWqYIKUcYqUCk7PrEjT5iM7TYGpmBsdDgnA0yB/fiANx2M+bxWO6ShwC/bDP0x3773ki7/7cEmxScZHZex5wFf19xqqi67s6Wc8cHDX0XMqRy1uaUdrcZJpg0Jc4aUCjyYwR7fAQK6OYb6S9v4/l1h39hrsx/TodOze9KAW0NlYTrZuYYLPAptl0jlIyuuQzK8pZA1CYoXgcnadGTUc7WnoNjw3QOkZ6eSlqOzuQWV5mEptcUozGnh42UFKd4bExFsOlRQXoH/nup5Z4YDXR1Hsj1Cqkl5WyGRzF4dqOdoTm5qBr0LAoRPIr21qhqK5isoncuhqTXOrR9BcOCGo0EhtfkM8aiaCpODWILWA10SQjo7yUZQLZNVWsrLqtDfKqCjZzpL9gQANds1bLxEaqc9kEhbIIWWUFeoYGoayuZF+PI9LKSplYajiqR9CVQWHIFrCa6KmZaWhnY6zxq2t0uefWGtK03uFh1stJFr0niUaocdR1dWxZ1YgxXlP8plkhMTI+Zor/1sZqor9vCKI5IYjmhCCaE4JoTgiiOSGI5oQgmhOCaE4IojkhiOaEIJoTgmhOCKI5IYjmhCCaE4JoTgiiOUGihf8XnAP/AZXM5XW+pzhCAAAAAElFTkSuQmCC" alt="Guará Forest Resort" style="height:60px;width:auto;flex-shrink:0;" />
-    <div>
-      <div class="h-eyebrow">
-        <span class="h-tag">Relatório de Performance</span>
-        <span class="h-sep">·</span>
-        <span class="h-tag blue">Meta Ads</span>
-      </div>
-      <h1 class="h-title">Guará Forest Resort</h1>
-      <p class="h-meta">1170120101070787 — Guará Forest Resort — MSG — Gestor: Pedro Silva</p>
+  <div>
+    <div class="h-eyebrow">
+      <span class="h-tag">Relatório de Performance</span>
+      <span class="h-sep">·</span>
+      <span class="h-tag blue">Meta Ads</span>
     </div>
+    <h1 class="h-title">Guará Forest Resort</h1>
+    <p class="h-meta">123456789 — Guará Forest Resort — Tráfego — Gestor: Pedro Silva</p>
   </div>
   <div class="h-bottom" style="align-items:center;gap:10px;">
     <div class="cal-wrap">
-      <button class="cal-btn" id="calBtn"><span id="calBtnLabel">01/07 – 15/07</span> ▾</button>
+      <button class="cal-btn" id="calBtn">📅 <span id="calBtnLabel">01/07 – 15/07</span> ▾</button>
       <div class="cal-drop" id="calDrop">
         <div class="cal-presets" id="calPresets"></div>
         <div class="cal-nav" style="display:flex;justify-content:space-between;align-items:center;padding:8px 14px;border-bottom:1px solid var(--border-soft);"><button id="calPrev" style="background:none;border:1px solid var(--border);border-radius:6px;cursor:pointer;font-size:14px;color:var(--text3);padding:2px 10px;line-height:1;">‹</button><span id="calMonthLabel" style="font-size:12px;font-weight:700;color:var(--text2);">—</span><button id="calNext" style="background:none;border:1px solid var(--border);border-radius:6px;cursor:pointer;font-size:14px;color:var(--text3);padding:2px 10px;line-height:1;">›</button></div>
@@ -461,12 +393,12 @@ body{background:var(--bg);color:var(--text);font-family:'Poppins',sans-serif;pad
 
 <!-- ACTION BAR -->
 <div class="action-bar" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px;align-items:center;">
-  <button id="btnDl" class="cal-btn" style="padding:6px 12px;">↓ Baixar PDF</button>
+  <button id="btnDl" class="cal-btn" style="padding:6px 12px;">📥 Baixar PDF</button>
   <div id="dropShare" style="position:relative;display:inline-block;">
-    <button id="btnShare" class="cal-btn" style="padding:6px 12px;">Compartilhar ▾</button>
+    <button id="btnShare" class="cal-btn" style="padding:6px 12px;">📤 Compartilhar ▾</button>
     <div id="shareMenu" style="display:none;position:absolute;top:calc(100% + 4px);left:0;background:var(--white);border:1px solid var(--border);border-radius:8px;box-shadow:0 4px 16px rgba(15,23,36,0.14);z-index:100;min-width:150px;overflow:hidden;">
-      <button id="shareWA" class="cal-preset" style="display:block;width:100%;text-align:left;padding:8px 12px;background:none;border:none;cursor:pointer;font-size:11px;color:var(--text2);">WhatsApp</button>
-      <button id="shareEmail" class="cal-preset" style="display:block;width:100%;text-align:left;padding:8px 12px;background:none;border:none;cursor:pointer;font-size:11px;color:var(--text2);">E-mail</button>
+      <button id="shareWA" class="cal-preset" style="display:block;width:100%;text-align:left;padding:8px 12px;background:none;border:none;cursor:pointer;font-size:11px;color:var(--text2);">💬 WhatsApp</button>
+      <button id="shareEmail" class="cal-preset" style="display:block;width:100%;text-align:left;padding:8px 12px;background:none;border:none;cursor:pointer;font-size:11px;color:var(--text2);">✉️ E-mail</button>
     </div>
   </div>
 </div>
@@ -525,7 +457,7 @@ body{background:var(--bg);color:var(--text);font-family:'Poppins',sans-serif;pad
     <div class="chart-canvas-wrap" style="height:180px;max-width:100%;"><canvas id="chartPie"></canvas></div>
     <div class="pie-legend" style="grid-template-columns:1fr 1fr;margin-top:12px;">
       <div class="pie-leg-item"><div class="pie-leg-top"><span class="pie-leg-dot" style="background:#1877F2;"></span><span class="pie-leg-label">Fundo VEN</span></div><div class="pie-leg-val" style="color:#1877F2;">R$ 5.514</div><div class="pie-leg-pct">45,8%</div></div>
-      <div class="pie-leg-item"><div class="pie-leg-top"><span class="pie-leg-dot" style="background:#18AEC6;"></span><span class="pie-leg-label">Fundo MSG</span></div><div class="pie-leg-val" style="color:#18AEC6;">R$ 2.865</div><div class="pie-leg-pct">23,8%</div></div>
+      <div class="pie-leg-item"><div class="pie-leg-top"><span class="pie-leg-dot" style="background:#7B2FBE;"></span><span class="pie-leg-label">Fundo MSG</span></div><div class="pie-leg-val" style="color:#7B2FBE;">R$ 2.865</div><div class="pie-leg-pct">23,8%</div></div>
       <div class="pie-leg-item"><div class="pie-leg-top"><span class="pie-leg-dot" style="background:#0077A8;"></span><span class="pie-leg-label">Meio</span></div><div class="pie-leg-val" style="color:#0077A8;">R$ 1.926</div><div class="pie-leg-pct">16,0%</div></div>
       <div class="pie-leg-item"><div class="pie-leg-top"><span class="pie-leg-dot" style="background:#E08C00;"></span><span class="pie-leg-label">Topo</span></div><div class="pie-leg-val" style="color:#E08C00;">R$ 1.741</div><div class="pie-leg-pct">14,5%</div></div>
     </div>
@@ -576,18 +508,14 @@ body{background:var(--bg);color:var(--text);font-family:'Poppins',sans-serif;pad
 
 <!-- FOOTER -->
 <div class="footer">
-  <span class="footer-left">Meta Ads — Guará Forest Resort — Jul 2026</span>
+  <span class="footer-left">Meta Ads — Guará Forest Resort — Ago 2026</span>
   <span class="footer-right">Gestão: <strong>Pedro Silva · Dreams</strong></span>
 </div>
 
 </div><!-- /page -->
 
 <script>
-var _D={
-  meta:{"cliente":"Guará Forest Resort","conta":"Conta #1170120101070787","gestor":"Pedro Silva","link":"https://pedro-s-developer.github.io/dashboard-forest-resort/","tipo":"msg","updated":"04/08/2026"},
-  campanhas:[{"id":"120243890518850100","name":"[pws]_[17/03/2026]_[FUNDO]_[ENG]_[F]_[CBO]_[CON]_[ICP RÍGIDO]","funil":"FUNDO_MSG","label":"ICP Rígido","status":"PAUSED","dias":[{"data":"2026-06-01","spend":101.06,"reach":15097,"impr":17604,"results":164},{"data":"2026-06-02","spend":85.24,"reach":15147,"impr":16842,"results":113},{"data":"2026-06-03","spend":88.4,"reach":13051,"impr":15643,"results":129},{"data":"2026-06-04","spend":54.62,"reach":8887,"impr":10303,"results":76},{"data":"2026-06-05","spend":68.44,"reach":15120,"impr":17067,"results":90},{"data":"2026-06-06","spend":82.51,"reach":13402,"impr":15652,"results":103},{"data":"2026-06-07","spend":87.87,"reach":18432,"impr":22151,"results":115},{"data":"2026-06-08","spend":79.46,"reach":14366,"impr":17061,"results":97},{"data":"2026-06-09","spend":65.03,"reach":12436,"impr":13791,"results":81},{"data":"2026-06-10","spend":90.41,"reach":15813,"impr":17903,"results":115},{"data":"2026-06-11","spend":89.36,"reach":13869,"impr":16264,"results":63},{"data":"2026-06-12","spend":63.02,"reach":8770,"impr":10276,"results":77},{"data":"2026-06-13","spend":53.38,"reach":8342,"impr":9842,"results":55},{"data":"2026-06-14","spend":99.76,"reach":18387,"impr":21053,"results":104},{"data":"2026-06-15","spend":72.71,"reach":12048,"impr":15514,"results":58},{"data":"2026-06-16","spend":136.0,"reach":20750,"impr":24683,"results":150},{"data":"2026-06-17","spend":69.65,"reach":9892,"impr":11464,"results":94},{"data":"2026-06-18","spend":73.75,"reach":11695,"impr":13276,"results":76},{"data":"2026-06-19","spend":76.94,"reach":12817,"impr":13978,"results":76},{"data":"2026-06-20","spend":95.97,"reach":13622,"impr":16062,"results":80},{"data":"2026-06-21","spend":56.09,"reach":5724,"impr":7114,"results":18},{"data":"2026-06-22","spend":76.28,"reach":8070,"impr":10215,"results":13},{"data":"2026-06-23","spend":100.14,"reach":8665,"impr":10433,"results":19},{"data":"2026-06-24","spend":97.08,"reach":8265,"impr":10048,"results":19},{"data":"2026-06-25","spend":72.89,"reach":5524,"impr":7155,"results":10},{"data":"2026-06-26","spend":74.29,"reach":5793,"impr":6734,"results":12},{"data":"2026-06-27","spend":117.22,"reach":7660,"impr":9059,"results":12},{"data":"2026-06-28","spend":75.72,"reach":4474,"impr":5490,"results":15},{"data":"2026-06-29","spend":73.27,"reach":3199,"impr":4149,"results":9},{"data":"2026-06-30","spend":98.32,"reach":7030,"impr":8522,"results":20},{"data":"2026-07-01","spend":71.77,"reach":4369,"impr":5320,"results":15},{"data":"2026-07-02","spend":71.28,"reach":4875,"impr":5713,"results":14},{"data":"2026-07-03","spend":64.94,"reach":3835,"impr":4970,"results":18},{"data":"2026-07-04","spend":91.14,"reach":6638,"impr":8496,"results":25},{"data":"2026-07-05","spend":52.34,"reach":2985,"impr":3759,"results":8},{"data":"2026-07-06","spend":92.61,"reach":6180,"impr":7683,"results":17},{"data":"2026-07-07","spend":91.01,"reach":5034,"impr":6692,"results":16},{"data":"2026-07-08","spend":74.4,"reach":4148,"impr":5350,"results":12},{"data":"2026-07-09","spend":66.53,"reach":3203,"impr":4031,"results":21},{"data":"2026-07-10","spend":72.94,"reach":3579,"impr":4527,"results":11},{"data":"2026-07-11","spend":102.53,"reach":5487,"impr":6963,"results":30},{"data":"2026-07-12","spend":72.71,"reach":4004,"impr":5122,"results":25},{"data":"2026-07-13","spend":82.93,"reach":5989,"impr":6804,"results":28},{"data":"2026-07-14","spend":66.35,"reach":2825,"impr":3536,"results":25},{"data":"2026-07-15","spend":83.4,"reach":3371,"impr":3988,"results":18},{"data":"2026-07-16","spend":57.74,"reach":2823,"impr":3316,"results":9},{"data":"2026-07-17","spend":60.66,"reach":2996,"impr":3645,"results":14},{"data":"2026-07-18","spend":81.24,"reach":3893,"impr":4951,"results":22},{"data":"2026-07-19","spend":58.37,"reach":3242,"impr":4386,"results":14},{"data":"2026-07-20","spend":61.29,"reach":3884,"impr":4914,"results":22}]},{"id":"120244304659510100","name":"[pws]_[26/03/2026]_[FUNDO]_[ENG]_[F]_[CBO]_[CON]_[VARIAÇÃO]","funil":"FUNDO_MSG","label":"Variação","status":"PAUSED","dias":[{"data":"2026-06-01","spend":57.41,"reach":5876,"impr":6966,"results":54},{"data":"2026-06-02","spend":41.7,"reach":4432,"impr":5314,"results":35},{"data":"2026-06-03","spend":45.18,"reach":5167,"impr":6071,"results":25},{"data":"2026-06-04","spend":41.78,"reach":4042,"impr":4710,"results":27},{"data":"2026-06-05","spend":32.02,"reach":4280,"impr":5020,"results":24},{"data":"2026-06-06","spend":45.52,"reach":5921,"impr":6667,"results":48},{"data":"2026-06-07","spend":41.67,"reach":5318,"impr":6518,"results":37},{"data":"2026-06-08","spend":30.61,"reach":3979,"impr":4626,"results":27},{"data":"2026-06-09","spend":36.44,"reach":4378,"impr":4833,"results":12},{"data":"2026-06-10","spend":46.64,"reach":3770,"impr":4127,"results":31},{"data":"2026-06-11","spend":27.11,"reach":1450,"impr":1761,"results":9},{"data":"2026-06-12","spend":23.35,"reach":1487,"impr":1676,"results":7},{"data":"2026-06-13","spend":62.15,"reach":5301,"impr":5809,"results":29},{"data":"2026-06-14","spend":57.94,"reach":5237,"impr":6056,"results":46},{"data":"2026-06-15","spend":45.18,"reach":4222,"impr":5014,"results":34},{"data":"2026-06-16","spend":60.52,"reach":5192,"impr":6088,"results":60},{"data":"2026-06-17","spend":37.63,"reach":3031,"impr":3562,"results":30},{"data":"2026-06-18","spend":40.22,"reach":4525,"impr":4807,"results":24},{"data":"2026-06-19","spend":43.92,"reach":4382,"impr":4977,"results":20},{"data":"2026-06-20","spend":22.79,"reach":1533,"impr":1763,"results":18},{"data":"2026-06-21","spend":26.92,"reach":1491,"impr":1870,"results":6},{"data":"2026-06-22","spend":24.36,"reach":1599,"impr":1976,"results":6},{"data":"2026-06-23","spend":34.5,"reach":2015,"impr":2436,"results":6},{"data":"2026-06-24","spend":30.22,"reach":1673,"impr":2027,"results":6},{"data":"2026-06-25","spend":37.99,"reach":1823,"impr":2409,"results":8},{"data":"2026-06-26","spend":41.01,"reach":1808,"impr":2280,"results":10},{"data":"2026-06-27","spend":48.87,"reach":1721,"impr":2202,"results":7},{"data":"2026-06-28","spend":35.93,"reach":1582,"impr":1969,"results":5},{"data":"2026-06-29","spend":26.5,"reach":576,"impr":803,"results":2},{"data":"2026-06-30","spend":39.47,"reach":1157,"impr":1563,"results":5},{"data":"2026-07-01","spend":35.78,"reach":979,"impr":1359,"results":10},{"data":"2026-07-02","spend":21.52,"reach":1016,"impr":1344,"results":6},{"data":"2026-07-03","spend":23.3,"reach":940,"impr":1214,"results":3},{"data":"2026-07-04","spend":34.68,"reach":1744,"impr":2165,"results":6},{"data":"2026-07-05","spend":18.94,"reach":760,"impr":940,"results":6},{"data":"2026-07-06","spend":33.46,"reach":1648,"impr":1998,"results":6},{"data":"2026-07-07","spend":37.22,"reach":2048,"impr":2569,"results":4},{"data":"2026-07-08","spend":26.8,"reach":1288,"impr":1530,"results":5},{"data":"2026-07-09","spend":24.48,"reach":1095,"impr":1343,"results":3},{"data":"2026-07-10","spend":26.0,"reach":1023,"impr":1278,"results":3},{"data":"2026-07-11","spend":41.04,"reach":1537,"impr":1911,"results":6},{"data":"2026-07-12","spend":24.17,"reach":980,"impr":1274,"results":4},{"data":"2026-07-13","spend":34.85,"reach":1586,"impr":2084,"results":11},{"data":"2026-07-14","spend":28.58,"reach":1575,"impr":1974,"results":6},{"data":"2026-07-15","spend":31.29,"reach":1510,"impr":1880,"results":7},{"data":"2026-07-16","spend":24.56,"reach":925,"impr":1227,"results":5},{"data":"2026-07-17","spend":26.01,"reach":1127,"impr":1423,"results":5},{"data":"2026-07-18","spend":38.66,"reach":1875,"impr":2455,"results":3},{"data":"2026-07-19","spend":23.88,"reach":1085,"impr":1491,"results":4},{"data":"2026-07-20","spend":23.37,"reach":1148,"impr":1379,"results":4}]},{"id":"120244304315830100","name":"[pws]_[26/03/2026]_[FUNDO]_[ENG]_[F]_[CBO]_[CON]_[ICP FLEXÍVEL]","funil":"FUNDO_MSG","label":"ICP Flexível","status":"PAUSED","dias":[{"data":"2026-06-01","spend":46.32,"reach":4903,"impr":5473,"results":18},{"data":"2026-06-02","spend":38.51,"reach":3903,"impr":4297,"results":18},{"data":"2026-06-03","spend":37.78,"reach":3993,"impr":4312,"results":16},{"data":"2026-06-04","spend":38.67,"reach":3850,"impr":4318,"results":23},{"data":"2026-06-05","spend":36.65,"reach":5405,"impr":6059,"results":22},{"data":"2026-06-06","spend":42.06,"reach":5978,"impr":6513,"results":27},{"data":"2026-06-07","spend":45.32,"reach":6006,"impr":6919,"results":24},{"data":"2026-06-08","spend":37.93,"reach":5946,"impr":6434,"results":25},{"data":"2026-06-09","spend":34.87,"reach":4521,"impr":4847,"results":17},{"data":"2026-06-10","spend":39.01,"reach":3011,"impr":3258,"results":15},{"data":"2026-06-11","spend":29.2,"reach":3025,"impr":3439,"results":9},{"data":"2026-06-12","spend":33.93,"reach":3909,"impr":4332,"results":9},{"data":"2026-06-13","spend":43.34,"reach":5009,"impr":5520,"results":15},{"data":"2026-06-14","spend":45.46,"reach":5164,"impr":5801,"results":27},{"data":"2026-06-15","spend":30.74,"reach":3026,"impr":3690,"results":13},{"data":"2026-06-16","spend":50.06,"reach":6003,"impr":6560,"results":16},{"data":"2026-06-17","spend":32.0,"reach":2956,"impr":3298,"results":20},{"data":"2026-06-18","spend":29.32,"reach":3551,"impr":3879,"results":12},{"data":"2026-06-19","spend":37.0,"reach":4337,"impr":4563,"results":11},{"data":"2026-06-20","spend":20.58,"reach":2223,"impr":2439,"results":4},{"data":"2026-06-21","spend":20.18,"reach":1830,"impr":2050,"results":3},{"data":"2026-06-22","spend":17.61,"reach":2023,"impr":2265,"results":3},{"data":"2026-06-23","spend":24.14,"reach":2057,"impr":2243,"results":3},{"data":"2026-06-24","spend":29.35,"reach":2561,"impr":2878,"results":4},{"data":"2026-06-25","spend":24.34,"reach":2195,"impr":2696,"results":2},{"data":"2026-06-26","spend":23.73,"reach":1626,"impr":2043,"results":2},{"data":"2026-06-27","spend":22.02,"reach":1069,"impr":1355,"results":4},{"data":"2026-06-28","spend":18.65,"reach":1154,"impr":1533,"results":5},{"data":"2026-06-29","spend":17.9,"reach":1008,"impr":1439,"results":0},{"data":"2026-06-30","spend":21.39,"reach":1460,"impr":1928,"results":3},{"data":"2026-07-01","spend":21.69,"reach":1412,"impr":1776,"results":1},{"data":"2026-07-02","spend":21.8,"reach":1541,"impr":1900,"results":5},{"data":"2026-07-03","spend":20.26,"reach":1133,"impr":1453,"results":2},{"data":"2026-07-04","spend":26.96,"reach":1828,"impr":2405,"results":8},{"data":"2026-07-05","spend":16.82,"reach":863,"impr":1106,"results":3},{"data":"2026-07-06","spend":26.2,"reach":1984,"impr":2463,"results":1},{"data":"2026-07-07","spend":29.78,"reach":1608,"impr":1996,"results":6},{"data":"2026-07-08","spend":23.2,"reach":1288,"impr":1575,"results":2},{"data":"2026-07-09","spend":19.34,"reach":1036,"impr":1220,"results":4},{"data":"2026-07-10","spend":23.97,"reach":1231,"impr":1543,"results":3},{"data":"2026-07-11","spend":33.91,"reach":2119,"impr":2638,"results":8},{"data":"2026-07-12","spend":22.16,"reach":1440,"impr":1813,"results":3},{"data":"2026-07-13","spend":28.14,"reach":2039,"impr":2603,"results":5},{"data":"2026-07-14","spend":23.23,"reach":2060,"impr":2590,"results":10},{"data":"2026-07-15","spend":23.29,"reach":2150,"impr":2595,"results":8},{"data":"2026-07-16","spend":22.45,"reach":1349,"impr":1723,"results":4},{"data":"2026-07-17","spend":23.59,"reach":1512,"impr":2005,"results":10},{"data":"2026-07-18","spend":30.97,"reach":2001,"impr":2612,"results":9},{"data":"2026-07-19","spend":21.56,"reach":1550,"impr":2098,"results":8},{"data":"2026-07-20","spend":22.79,"reach":1531,"impr":1857,"results":6}]},{"id":"120244305048990100","name":"[pws]_[26/03/2026]_[CON]_[ENG]_[F]_[CBO]_[FUNDO]-[WHAT]- ICP FLEXÍVEL","funil":"FUNDO_MSG","label":"WHAT ICP Flex","status":"PAUSED","dias":[{"data":"2026-06-01","spend":50.21,"reach":5635,"impr":6292,"results":31},{"data":"2026-06-02","spend":42.86,"reach":4894,"impr":5279,"results":16},{"data":"2026-06-03","spend":39.56,"reach":4384,"impr":4762,"results":18},{"data":"2026-06-04","spend":38.69,"reach":3501,"impr":3907,"results":15},{"data":"2026-06-05","spend":28.4,"reach":3421,"impr":3880,"results":15},{"data":"2026-06-06","spend":30.64,"reach":3601,"impr":4118,"results":19},{"data":"2026-06-07","spend":28.71,"reach":3863,"impr":4246,"results":17},{"data":"2026-06-08","spend":28.75,"reach":4103,"impr":4615,"results":17},{"data":"2026-06-09","spend":26.24,"reach":2987,"impr":3181,"results":8},{"data":"2026-06-10","spend":39.66,"reach":3940,"impr":4441,"results":14},{"data":"2026-06-11","spend":26.81,"reach":2821,"impr":3167,"results":11},{"data":"2026-06-12","spend":29.62,"reach":2962,"impr":3446,"results":10},{"data":"2026-06-13","spend":29.09,"reach":3190,"impr":3653,"results":13},{"data":"2026-06-14","spend":44.58,"reach":5500,"impr":6375,"results":22},{"data":"2026-06-15","spend":41.7,"reach":4631,"impr":5283,"results":10},{"data":"2026-06-16","spend":52.14,"reach":6195,"impr":7211,"results":30},{"data":"2026-06-17","spend":33.38,"reach":3752,"impr":4056,"results":12},{"data":"2026-06-18","spend":29.4,"reach":3270,"impr":3661,"results":16},{"data":"2026-06-19","spend":26.77,"reach":2705,"impr":3132,"results":9},{"data":"2026-06-20","spend":12.24,"reach":1083,"impr":1177,"results":11}]},{"id":"120246569739360100","name":"[pws]_[01/05/2026]_[CON]_[LEAD]_[F]_[ABO]_[FUNDO]_[ICP - 1%]","funil":"FUNDO_MSG","label":"ICP 1%","status":"PAUSED","dias":[{"data":"2026-06-01","spend":47.68,"reach":3611,"impr":3740,"results":7},{"data":"2026-06-02","spend":40.16,"reach":3227,"impr":3391,"results":2},{"data":"2026-06-03","spend":25.82,"reach":1852,"impr":1958,"results":3},{"data":"2026-06-04","spend":21.76,"reach":1505,"impr":1568,"results":3},{"data":"2026-06-05","spend":11.88,"reach":832,"impr":856,"results":0},{"data":"2026-06-06","spend":14.25,"reach":925,"impr":955,"results":2},{"data":"2026-06-07","spend":17.87,"reach":1386,"impr":1463,"results":1},{"data":"2026-06-08","spend":17.14,"reach":1249,"impr":1346,"results":1},{"data":"2026-06-09","spend":15.19,"reach":1010,"impr":1048,"results":1},{"data":"2026-06-10","spend":5.14,"reach":395,"impr":403,"results":1}]},{"id":"120246569739830100","name":"[pws]_[01/05/2026]_[CON]_[LEAD]_[F]_[ABO]_[FUNDO]_[ICP - 2%]","funil":"FUNDO_MSG","label":"ICP 2%","status":"PAUSED","dias":[{"data":"2026-06-01","spend":19.56,"reach":1382,"impr":1541,"results":0},{"data":"2026-06-02","spend":22.43,"reach":1643,"impr":1817,"results":2},{"data":"2026-06-03","spend":17.72,"reach":1024,"impr":1191,"results":0},{"data":"2026-06-04","spend":20.49,"reach":1273,"impr":1434,"results":1},{"data":"2026-06-05","spend":15.02,"reach":892,"impr":1038,"results":1},{"data":"2026-06-06","spend":13.95,"reach":896,"impr":1022,"results":0},{"data":"2026-06-07","spend":17.86,"reach":1178,"impr":1315,"results":1},{"data":"2026-06-08","spend":14.83,"reach":926,"impr":1084,"results":1},{"data":"2026-06-09","spend":15.29,"reach":773,"impr":903,"results":0},{"data":"2026-06-10","spend":6.01,"reach":320,"impr":356,"results":0}]},{"id":"120248901205390100","name":"[pws]_[04/06/2026]_[FUNDO]_[ENG]_[F]_[CBO]_[CON]_[ICP RÍGIDO]_[02]","funil":"FUNDO_MSG","label":"ICP Rígido [02]","status":"PAUSED","dias":[{"data":"2026-06-04","spend":8.84,"reach":1243,"impr":1251,"results":5},{"data":"2026-06-05","spend":8.09,"reach":1526,"impr":1595,"results":4},{"data":"2026-06-06","spend":8.41,"reach":1845,"impr":1873,"results":8},{"data":"2026-06-07","spend":10.25,"reach":2288,"impr":2290,"results":5},{"data":"2026-06-08","spend":13.44,"reach":2091,"impr":2207,"results":5},{"data":"2026-06-09","spend":13.76,"reach":1580,"impr":1746,"results":11},{"data":"2026-06-10","spend":12.05,"reach":1271,"impr":1419,"results":7},{"data":"2026-06-11","spend":19.43,"reach":2015,"impr":2228,"results":12},{"data":"2026-06-12","spend":10.76,"reach":1487,"impr":1602,"results":7},{"data":"2026-06-13","spend":11.98,"reach":1857,"impr":2064,"results":8},{"data":"2026-06-14","spend":26.15,"reach":3748,"impr":4282,"results":24},{"data":"2026-06-15","spend":24.99,"reach":3213,"impr":3713,"results":20},{"data":"2026-06-16","spend":32.1,"reach":4714,"impr":5399,"results":20},{"data":"2026-06-17","spend":25.34,"reach":3429,"impr":3859,"results":22},{"data":"2026-06-18","spend":26.12,"reach":3763,"impr":4147,"results":25},{"data":"2026-06-19","spend":25.65,"reach":3629,"impr":3934,"results":18},{"data":"2026-06-20","spend":22.09,"reach":2330,"impr":2583,"results":17},{"data":"2026-06-21","spend":31.36,"reach":2105,"impr":2565,"results":5},{"data":"2026-06-22","spend":31.92,"reach":2386,"impr":3014,"results":4},{"data":"2026-06-23","spend":37.86,"reach":2094,"impr":2412,"results":8},{"data":"2026-06-24","spend":32.27,"reach":2488,"impr":2892,"results":8},{"data":"2026-06-25","spend":30.25,"reach":2545,"impr":3282,"results":9},{"data":"2026-06-26","spend":33.77,"reach":2318,"impr":3135,"results":2},{"data":"2026-06-27","spend":44.22,"reach":2325,"impr":3435,"results":4},{"data":"2026-06-28","spend":32.83,"reach":1852,"impr":2671,"results":4},{"data":"2026-06-29","spend":29.15,"reach":1606,"impr":2513,"results":7},{"data":"2026-06-30","spend":37.57,"reach":2544,"impr":3666,"results":5},{"data":"2026-07-01","spend":26.8,"reach":1739,"impr":2488,"results":2},{"data":"2026-07-02","spend":26.9,"reach":1721,"impr":2320,"results":11},{"data":"2026-07-03","spend":24.2,"reach":1533,"impr":2130,"results":5},{"data":"2026-07-04","spend":33.1,"reach":2406,"impr":3298,"results":6},{"data":"2026-07-05","spend":20.94,"reach":1076,"impr":1443,"results":2},{"data":"2026-07-06","spend":35.7,"reach":2254,"impr":3121,"results":3},{"data":"2026-07-07","spend":34.28,"reach":2564,"impr":3344,"results":4},{"data":"2026-07-08","spend":26.24,"reach":1578,"impr":1954,"results":5},{"data":"2026-07-09","spend":22.04,"reach":1066,"impr":1334,"results":2},{"data":"2026-07-10","spend":28.44,"reach":1362,"impr":1684,"results":3},{"data":"2026-07-11","spend":38.81,"reach":2032,"impr":2321,"results":7},{"data":"2026-07-12","spend":26.84,"reach":1526,"impr":1893,"results":1},{"data":"2026-07-13","spend":34.72,"reach":1887,"impr":2243,"results":7},{"data":"2026-07-14","spend":26.84,"reach":1670,"impr":2047,"results":4},{"data":"2026-07-15","spend":26.94,"reach":1476,"impr":1789,"results":1},{"data":"2026-07-16","spend":26.84,"reach":1133,"impr":1393,"results":4},{"data":"2026-07-17","spend":29.62,"reach":1316,"impr":1664,"results":8},{"data":"2026-07-18","spend":21.36,"reach":961,"impr":1133,"results":1}]},{"id":"120248901205380100","name":"[pws]_[04/06/2026]_[FUNDO]_[ENG]_[F]_[CBO]_[CON]_[VARIAÇÃO]","funil":"FUNDO_MSG","label":"Variação [Jun]","status":"PAUSED","dias":[{"data":"2026-06-04","spend":9.54,"reach":1131,"impr":1183,"results":4},{"data":"2026-06-05","spend":8.36,"reach":1370,"impr":1414,"results":0},{"data":"2026-06-06","spend":7.53,"reach":1247,"impr":1285,"results":2},{"data":"2026-06-07","spend":10.62,"reach":1311,"impr":1332,"results":4},{"data":"2026-06-08","spend":15.32,"reach":1770,"impr":1869,"results":6},{"data":"2026-06-09","spend":14.27,"reach":1380,"impr":1499,"results":6},{"data":"2026-06-10","spend":12.76,"reach":645,"impr":728,"results":2},{"data":"2026-06-11","spend":13.91,"reach":1404,"impr":1544,"results":3},{"data":"2026-06-12","spend":13.76,"reach":1682,"impr":1766,"results":3},{"data":"2026-06-13","spend":16.67,"reach":1860,"impr":2096,"results":7},{"data":"2026-06-14","spend":19.12,"reach":2394,"impr":2751,"results":9},{"data":"2026-06-15","spend":21.6,"reach":2079,"impr":2615,"results":7},{"data":"2026-06-16","spend":32.17,"reach":3460,"impr":3861,"results":22},{"data":"2026-06-17","spend":17.16,"reach":1914,"impr":2150,"results":10},{"data":"2026-06-18","spend":14.8,"reach":1578,"impr":1771,"results":18},{"data":"2026-06-19","spend":20.93,"reach":2509,"impr":2714,"results":12},{"data":"2026-06-20","spend":25.91,"reach":2441,"impr":2633,"results":11},{"data":"2026-06-21","spend":25.19,"reach":1134,"impr":1303,"results":7},{"data":"2026-06-22","spend":26.16,"reach":1606,"impr":1871,"results":6},{"data":"2026-06-23","spend":36.24,"reach":1148,"impr":1295,"results":6},{"data":"2026-06-24","spend":28.8,"reach":1892,"impr":2084,"results":4},{"data":"2026-06-25","spend":25.32,"reach":2702,"impr":3140,"results":3},{"data":"2026-06-26","spend":26.6,"reach":1628,"impr":1969,"results":1},{"data":"2026-06-27","spend":26.61,"reach":1251,"impr":1518,"results":0},{"data":"2026-06-28","spend":17.43,"reach":867,"impr":1100,"results":3},{"data":"2026-06-29","spend":17.11,"reach":700,"impr":992,"results":3},{"data":"2026-06-30","spend":23.65,"reach":1362,"impr":1707,"results":4},{"data":"2026-07-01","spend":20.9,"reach":1038,"impr":1402,"results":4},{"data":"2026-07-02","spend":25.1,"reach":1343,"impr":1618,"results":12},{"data":"2026-07-03","spend":19.46,"reach":1198,"impr":1414,"results":0},{"data":"2026-07-04","spend":27.7,"reach":1931,"impr":2163,"results":7},{"data":"2026-07-05","spend":14.93,"reach":759,"impr":894,"results":1},{"data":"2026-07-06","spend":28.79,"reach":1682,"impr":2036,"results":3},{"data":"2026-07-07","spend":31.14,"reach":1648,"impr":1931,"results":5},{"data":"2026-07-08","spend":22.69,"reach":1351,"impr":1526,"results":1},{"data":"2026-07-09","spend":19.59,"reach":977,"impr":1076,"results":4},{"data":"2026-07-10","spend":23.18,"reach":1129,"impr":1337,"results":3},{"data":"2026-07-11","spend":34.07,"reach":1806,"impr":1991,"results":3},{"data":"2026-07-12","spend":21.62,"reach":1011,"impr":1160,"results":6},{"data":"2026-07-13","spend":28.07,"reach":1760,"impr":2004,"results":9},{"data":"2026-07-14","spend":22.85,"reach":1512,"impr":1717,"results":3},{"data":"2026-07-15","spend":24.04,"reach":1211,"impr":1374,"results":7},{"data":"2026-07-16","spend":22.43,"reach":1085,"impr":1282,"results":3},{"data":"2026-07-17","spend":23.52,"reach":1154,"impr":1343,"results":6},{"data":"2026-07-18","spend":31.66,"reach":1537,"impr":1794,"results":3},{"data":"2026-07-19","spend":22.08,"reach":1122,"impr":1342,"results":2},{"data":"2026-07-20","spend":22.7,"reach":1010,"impr":1223,"results":1}]},{"id":"120249656243640100","name":"[pws]_[16/06/2026]_[TOPO]_[ENG]_[F]_[CBO]_[AQ]","funil":"TOPO","label":"Aquecimento","status":"PAUSED","dias":[{"data":"2026-06-16","spend":42.36,"reach":11721,"impr":12273,"results":0},{"data":"2026-06-17","spend":36.07,"reach":9620,"impr":9814,"results":0},{"data":"2026-06-18","spend":41.2,"reach":8553,"impr":8607,"results":0},{"data":"2026-06-19","spend":38.79,"reach":6578,"impr":7025,"results":0},{"data":"2026-06-20","spend":33.07,"reach":6272,"impr":6617,"results":0},{"data":"2026-06-21","spend":31.78,"reach":6773,"impr":6961,"results":0},{"data":"2026-06-22","spend":30.03,"reach":6727,"impr":6964,"results":0},{"data":"2026-06-23","spend":28.71,"reach":5898,"impr":6030,"results":0},{"data":"2026-06-24","spend":29.62,"reach":4951,"impr":5139,"results":0},{"data":"2026-06-25","spend":28.56,"reach":4793,"impr":4793,"results":0},{"data":"2026-06-26","spend":30.16,"reach":5432,"impr":5615,"results":0},{"data":"2026-06-27","spend":30.96,"reach":5445,"impr":5725,"results":1},{"data":"2026-06-28","spend":30.94,"reach":5715,"impr":5754,"results":0},{"data":"2026-06-29","spend":29.85,"reach":5842,"impr":5996,"results":0},{"data":"2026-06-30","spend":31.18,"reach":5574,"impr":5865,"results":0},{"data":"2026-07-01","spend":28.9,"reach":6647,"impr":6865,"results":0},{"data":"2026-07-02","spend":32.11,"reach":6442,"impr":6670,"results":0},{"data":"2026-07-03","spend":26.54,"reach":5725,"impr":5750,"results":0},{"data":"2026-07-04","spend":30.32,"reach":6995,"impr":6995,"results":0},{"data":"2026-07-05","spend":30.66,"reach":6463,"impr":6659,"results":0},{"data":"2026-07-06","spend":31.4,"reach":7259,"impr":7348,"results":0},{"data":"2026-07-07","spend":12.5,"reach":3310,"impr":3350,"results":0}]},{"id":"120250877290610100","name":"[pws]_[11/07/2026]_[FUNDO]_[ENG]_[F]_[ABO]_[CON]_[FUNCIONÁRIOS]_[01]","funil":"FUNDO_MSG","label":"Funcionários [01]","status":"ACTIVE","dias":[{"data":"2026-07-12","spend":45.43,"reach":3236,"impr":4062,"results":13},{"data":"2026-07-13","spend":124.75,"reach":8780,"impr":11242,"results":65},{"data":"2026-07-14","spend":146.74,"reach":10041,"impr":12679,"results":104},{"data":"2026-07-15","spend":135.89,"reach":9690,"impr":11456,"results":66},{"data":"2026-07-16","spend":110.55,"reach":9749,"impr":11240,"results":61},{"data":"2026-07-17","spend":104.19,"reach":8431,"impr":9770,"results":50},{"data":"2026-07-18","spend":149.45,"reach":12543,"impr":14459,"results":61},{"data":"2026-07-19","spend":189.8,"reach":16679,"impr":20403,"results":73},{"data":"2026-07-20","spend":269.78,"reach":28828,"impr":34624,"results":97},{"data":"2026-07-21","spend":242.58,"reach":21831,"impr":25158,"results":86},{"data":"2026-07-22","spend":219.26,"reach":20314,"impr":23943,"results":70},{"data":"2026-07-23","spend":194.25,"reach":16630,"impr":19958,"results":49},{"data":"2026-07-24","spend":183.14,"reach":16349,"impr":19156,"results":51},{"data":"2026-07-25","spend":243.53,"reach":19299,"impr":23406,"results":52},{"data":"2026-07-26","spend":83.28,"reach":5676,"impr":6505,"results":26}]},{"id":"120251084501410100","name":"[pws]_[20/07/2026]_[FUNDO]_[ENG]_[F]_[ABO]_[CON]_[FUNCIONÁRIOS]_[02]","funil":"FUNDO_MSG","label":"Funcionários [02]","status":"ACTIVE","dias":[{"data":"2026-07-20","spend":35.99,"reach":3006,"impr":3476,"results":9},{"data":"2026-07-21","spend":99.0,"reach":6593,"impr":8081,"results":35},{"data":"2026-07-22","spend":79.82,"reach":6247,"impr":7334,"results":25},{"data":"2026-07-23","spend":59.76,"reach":4664,"impr":5455,"results":9},{"data":"2026-07-24","spend":84.36,"reach":6035,"impr":7075,"results":31},{"data":"2026-07-25","spend":118.6,"reach":9836,"impr":11640,"results":33},{"data":"2026-07-26","spend":13.79,"reach":837,"impr":944,"results":3}]},{"id":"","name":"[pws]_[04/06/2026]_[CON]_[ENG]_[F]_[CBO]_[FUNDO]-[WHAT]- ICP FLEXÍVEL","funil":"FUNDO_MSG","label":"WHAT ICP Flex [Jun]","status":"PAUSED","dias":[{"data":"2026-06-04","spend":9.3,"reach":1304,"impr":1304,"results":4},{"data":"2026-06-05","spend":7.02,"reach":1119,"impr":1169,"results":4},{"data":"2026-06-06","spend":9.13,"reach":1499,"impr":1525,"results":3},{"data":"2026-06-07","spend":10.04,"reach":1526,"impr":1560,"results":3},{"data":"2026-06-08","spend":12.78,"reach":1545,"impr":1582,"results":3},{"data":"2026-06-09","spend":14.69,"reach":1331,"impr":1421,"results":4},{"data":"2026-06-10","spend":15.17,"reach":816,"impr":906,"results":2},{"data":"2026-06-11","spend":15.16,"reach":939,"impr":999,"results":2},{"data":"2026-06-12","spend":8.84,"reach":268,"impr":287,"results":2},{"data":"2026-06-13","spend":13.72,"reach":542,"impr":578,"results":1},{"data":"2026-06-14","spend":19.75,"reach":953,"impr":1001,"results":3},{"data":"2026-06-15","spend":5.34,"reach":213,"impr":230,"results":0}]},{"id":"","name":"[pws]_[02/04/2026]_[CON]_[LEAD]_[F]_[ABO]_[FUNDO]_[CASADOS]_[LL1%]","funil":"FUNDO_MSG","label":"Casados LL1%","status":"PAUSED","dias":[{"data":"2026-06-01","spend":9.72,"reach":704,"impr":743,"results":0}]},{"id":"","name":"[pws]_[01/05/2026]_[CON]_[LEAD]_[F]_[ABO]_[FUNDO]_[CASADOS]_[LL2%]","funil":"FUNDO_MSG","label":"Casados LL2%","status":"PAUSED","dias":[{"data":"2026-06-01","spend":9.55,"reach":643,"impr":683,"results":0}]}],
-  relatorios:{"2026-07-16_2026-07-22":"<h2>Semana de 16 a 22 de julho de 2026</h2><p>Semana marcada pela transição de estratégia: campanhas antigas (ICP Rígido, ICP Flexível, Variação) deram espaço à campanha FUNCIONÁRIOS [01], que assumiu o protagonismo do budget. O foco em servidores públicos segmentados via sindicato mostrou CTR e alcance superiores.</p><h3>Destaques</h3><ul><li>FUNCIONÁRIOS [01]: R$1.006,80 em 8 dias com 1.199 cliques WA</li><li>Campanhas antigas mantidas com orçamento residual para não perder histórico de aprendizado</li><li>TOPO pausado — sem campanha ativa de topo de funil</li></ul>"}
-};
+var _D={"meta":{"cuenta_id":"123456789","periodo":"01 Ago 2026 – 05 Ago 2026","tipo":"msg","cliente_nome":"Guará Forest Resort","updated":"06/08/2026"},"campanhas":[]};
 
 // ═══════════════════════════════════════════════════════════
 // ADAPTER — deriva schema do novo design a partir de _D.campanhas[].dias[]
@@ -795,10 +723,10 @@ function renderObjCards(D, inicio, fim){
   // Ordem: FUNDO_VEN, FUNDO_MSG, MEIO, TOPO (fundo → topo)
   var order = active.slice(); // já vem na ordem correta de detectActiveSegments
   var META = {
-    TOPO: {bg:'#FFF9EC', border:'rgba(224,140,0,0.3)', bar:'#E08C00', color:'#E08C00', icon:'T', title:'Topo — Awareness'},
-    MEIO: {bg:'#E0F4FA', border:'rgba(0,119,168,0.3)', bar:'#0077A8', color:'#0077A8', icon:'M', title:'Meio — Tráfego'},
-    FUNDO_MSG: {bg:'var(--purple-bg)', border:'rgba(24,174,198,0.3)', bar:'#18AEC6', color:'#18AEC6', icon:'C', title:'Fundo — Conversas (MSG)', cls:'msg'},
-    FUNDO_VEN: {bg:'var(--blue-bg)', border:'rgba(24,119,242,0.3)', bar:'#1877F2', color:'#1877F2', icon:'V', title:'Fundo — Vendas (VEN)', cls:'ven'}
+    TOPO: {bg:'#FFF9EC', border:'rgba(224,140,0,0.3)', bar:'#E08C00', color:'#E08C00', icon:'🎯', title:'Topo — Awareness'},
+    MEIO: {bg:'#E0F4FA', border:'rgba(0,119,168,0.3)', bar:'#0077A8', color:'#0077A8', icon:'🌐', title:'Meio — Tráfego'},
+    FUNDO_MSG: {bg:'var(--purple-bg)', border:'rgba(123,47,190,0.3)', bar:'#7B2FBE', color:'#7B2FBE', icon:'💬', title:'Fundo — Conversas (MSG)', cls:'msg'},
+    FUNDO_VEN: {bg:'var(--blue-bg)', border:'rgba(24,119,242,0.3)', bar:'#1877F2', color:'#1877F2', icon:'🛒', title:'Fundo — Vendas (VEN)', cls:'ven'}
   };
 
   container.innerHTML = order.map(function(seg){
@@ -881,7 +809,7 @@ function renderCampanhasTab(D){
   var CAMPS = D.CAMPS || {};
   var META = {
     FUNDO_VEN: {badge:'fundo-ven', tag:'FUNDO VEN', title:'Fundo de vendas', color:'#1877F2', resultLbl:'Compras', cprLbl:'C/Compra', extraLbl:'ROAS', extraColor:'var(--green)'},
-    FUNDO_MSG: {badge:'fundo-msg', tag:'FUNDO MSG', title:'Fundo de conversas', color:'#18AEC6', resultLbl:'Conversas', cprLbl:'C/Conversa', extraLbl:'—', extraColor:'var(--teal)'},
+    FUNDO_MSG: {badge:'fundo-msg', tag:'FUNDO MSG', title:'Fundo de conversas', color:'#7B2FBE', resultLbl:'Conversas', cprLbl:'C/Conversa', extraLbl:'—', extraColor:'var(--teal)'},
     MEIO:      {badge:'meio', tag:'MEIO', title:'Meio do funil', color:'#0077A8', resultLbl:'Visitas', cprLbl:'C/Visita', extraLbl:'—', extraColor:'var(--text2)'},
     TOPO:      {badge:'topo', tag:'TOPO', title:'Topo do funil', color:'#E08C00', resultLbl:'Alcance', cprLbl:'CPM', extraLbl:'—', extraColor:'var(--text2)'}
   };
@@ -981,22 +909,21 @@ function renderFunilTab(D, inicio, fim){
   }
   // MSG funnel
   if(tipo!=='ven' && (m.reach>0 || m.results>0)){
-    var haWA = m.clicks_wa > 0;
-    var mp1 = haWA ? pct(m.clicks_wa, m.reach) : pct(m.results, m.reach);
-    var mp2 = haWA && m.results > 0 ? pct(m.results, m.clicks_wa) : 0;
+    var _wa = m.clicks_wa > 0 ? m.clicks_wa : m.results;
+    var _conv = m.clicks_wa > 0 ? m.results : 0;
+    var mp1 = pct(_wa, m.reach);
+    var mp2 = _conv > 0 ? pct(_conv, _wa) : 0;
     html += '<div class="funnel-container">'
       + '<div class="funnel-header">'
-      +   '<div class="funnel-header-left"><div class="funnel-type-icon msg">C</div><div><div class="funnel-title">Funil de Conversa (WhatsApp)</div><div class="funnel-subtitle">Do alcance à conversa</div></div></div>'
+      +   '<div class="funnel-header-left"><div class="funnel-type-icon msg">💬</div><div><div class="funnel-title">Funil de Conversa (WhatsApp)</div><div class="funnel-subtitle">Do alcance à conversa</div></div></div>'
       +   '<span class="funnel-tag msg">MSG</span>'
       + '</div>'
-      + '<div class="funnel-reach-banner"><span style="font-size:16px;font-weight:700;color:var(--text3);">◉</span><div><div class="funnel-reach-label">Alcance total</div><div class="funnel-reach-val">'+_fmtNuma(m.reach)+' pessoas</div></div><span class="funnel-reach-arrow">↓</span></div>'
+      + '<div class="funnel-reach-banner"><span style="font-size:18px;">👁</span><div><div class="funnel-reach-label">Alcance total</div><div class="funnel-reach-val">'+_fmtNuma(m.reach)+' pessoas</div></div><span class="funnel-reach-arrow">↓</span></div>'
       + '<div class="funnel-stages">'
-      +   (haWA ? stg('s-blue','↗','Cliques WA','Etapa 1 de 2', m.clicks_wa, mp1, 'do alcance') : '')
-      +   (haWA ? (m.results > 0 ? stg('s-purple','C','Conversas iniciadas','Etapa 2 de 2', m.results, mp2, 'dos cliques') : '') : stg('s-purple','C','Conversas iniciadas','Resultado', m.results, mp1, 'do alcance'))
+      +   stg('s-blue','🖱','Cliques WA','Etapa 1 de 2', _wa, mp1, 'do alcance')
+      +   (_conv > 0 ? stg('s-purple','💬','Conversas iniciadas','Etapa 2 de 2', _conv, mp2, 'dos cliques') : '')
       + '</div>'
-      + (haWA
-          ? (m.clicks_wa>0?'<div class="funnel-insight"><div class="funnel-insight-icon">▸</div><div class="funnel-insight-text">De <span class="funnel-insight-hl">'+_fmtNuma(m.reach)+' pessoas alcançadas</span>, '+_fmtNuma(m.clicks_wa)+' clicaram no WhatsApp. Custo médio de <span class="funnel-insight-hl">'+_fmtBRLa(m.spend/m.clicks_wa)+' por clique</span>.</div></div>':'')
-          : (m.results>0?'<div class="funnel-insight"><div class="funnel-insight-icon">▸</div><div class="funnel-insight-text">De <span class="funnel-insight-hl">'+_fmtNuma(m.reach)+' pessoas alcançadas</span>, '+_fmtNuma(m.results)+' iniciaram uma conversa. Custo médio de <span class="funnel-insight-hl">'+_fmtBRLa(m.spend/m.results)+' por conversa</span>.</div></div>':''))
+      + (_wa>0?'<div class="funnel-insight"><div class="funnel-insight-icon">✨</div><div class="funnel-insight-text">De <span class="funnel-insight-hl">'+_fmtNuma(m.reach)+' pessoas alcançadas</span>, '+_fmtNuma(_wa)+' clicaram no WhatsApp. Custo médio de <span class="funnel-insight-hl">'+_fmtBRLa(m.spend/_wa)+' por clique</span>.</div></div>':'')
       + '</div>';
   }
   // VEN funnel
@@ -1007,17 +934,17 @@ function renderFunilTab(D, inicio, fim){
     var vp4 = pct(v.compras, v.init_checkout>0?v.init_checkout:v.reach);
     html += '<div class="funnel-container">'
       + '<div class="funnel-header">'
-      +   '<div class="funnel-header-left"><div class="funnel-type-icon ven">V</div><div><div class="funnel-title">Funil de Vendas</div><div class="funnel-subtitle">Do alcance à compra finalizada</div></div></div>'
+      +   '<div class="funnel-header-left"><div class="funnel-type-icon ven">🛒</div><div><div class="funnel-title">Funil de Vendas</div><div class="funnel-subtitle">Do alcance à compra finalizada</div></div></div>'
       +   '<span class="funnel-tag ven">VEN</span>'
       + '</div>'
-      + '<div class="funnel-reach-banner"><span style="font-size:16px;font-weight:700;color:var(--text3);">◉</span><div><div class="funnel-reach-label">Alcance total</div><div class="funnel-reach-val">'+_fmtNuma(v.reach)+' pessoas</div></div><span class="funnel-reach-arrow">↓</span></div>'
+      + '<div class="funnel-reach-banner"><span style="font-size:18px;">👁</span><div><div class="funnel-reach-label">Alcance total</div><div class="funnel-reach-val">'+_fmtNuma(v.reach)+' pessoas</div></div><span class="funnel-reach-arrow">↓</span></div>'
       + '<div class="funnel-stages">'
-      +   stg('s-blue','P','Page Views','Etapa 1 de 4', v.view_content, vp1, 'do alcance')
-      +   stg('s-yellow','C','Adicionou ao carrinho','Etapa 2 de 4', v.add_to_cart, vp2, v.view_content>0?'dos views':'do alcance')
-      +   stg('s-teal','◈','Iniciou checkout','Etapa 3 de 4', v.init_checkout, vp3, v.add_to_cart>0?'do carrinho':'dos views')
-      +   stg('s-green','✓','Compras finalizadas','Etapa 4 de 4', v.compras, vp4, v.init_checkout>0?'do checkout':'do alcance')
+      +   stg('s-blue','📄','Page Views','Etapa 1 de 4', v.view_content, vp1, 'do alcance')
+      +   stg('s-yellow','🛒','Adicionou ao carrinho','Etapa 2 de 4', v.add_to_cart, vp2, v.view_content>0?'dos views':'do alcance')
+      +   stg('s-teal','💳','Iniciou checkout','Etapa 3 de 4', v.init_checkout, vp3, v.add_to_cart>0?'do carrinho':'dos views')
+      +   stg('s-green','✅','Compras finalizadas','Etapa 4 de 4', v.compras, vp4, v.init_checkout>0?'do checkout':'do alcance')
       + '</div>'
-      + (v.compras>0 && v.receita>0 ? '<div class="funnel-insight"><div class="funnel-insight-icon">▸</div><div class="funnel-insight-text">'+_fmtNuma(v.compras)+' compras geraram <span class="funnel-insight-hl">R$ '+_fmtNuma(v.receita)+' em receita</span> — ROAS de <span class="funnel-insight-hl">'+(v.receita/v.spend).toFixed(2).replace('.',',')+'x</span>.</div></div>':'')
+      + (v.compras>0 && v.receita>0 ? '<div class="funnel-insight"><div class="funnel-insight-icon">✨</div><div class="funnel-insight-text">'+_fmtNuma(v.compras)+' compras geraram <span class="funnel-insight-hl">R$ '+_fmtNuma(v.receita)+' em receita</span> — ROAS de <span class="funnel-insight-hl">'+(v.receita/v.spend).toFixed(2).replace('.',',')+'x</span>.</div></div>':'')
       + '</div>';
   }
   container.innerHTML = html || '<p style="color:var(--text4);padding:14px;font-size:12px">Sem dados de funil neste período.</p>';
@@ -1060,7 +987,6 @@ var _DYN_MIN=null, _DYN_MAX=null;
   _D.DAILY = derived.DAILY;
   _D.LABELS = derived.LABELS;
   _D.RECEITA_SERIES = derived.RECEITA_SERIES;
-  if(typeof cReceita!=='undefined'&&cReceita){cReceita.data.labels=_D.LABELS;cReceita.data.datasets[0].data=_D.RECEITA_SERIES;cReceita.update();}
 })();
 
 // ═══════════════════════════════════════════════════════════
@@ -1096,8 +1022,8 @@ var TT={backgroundColor:'#fff',titleColor:'#0F1724',bodyColor:'#0F1724',borderCo
 var seg = (_D.meta.tipo === 'msg' ? 'FUNDO_MSG' : 'FUNDO_VEN');
 var c1=new Chart(document.getElementById('chartInvestRes'),{
   data:{labels:FD[seg].labels,datasets:[
-    {type:'bar',label:'Investido (R$)',data:FD[seg].invest,backgroundColor:'#E2F7FA',borderColor:'#18AEC6',borderWidth:0.5,borderRadius:4,yAxisID:'y',order:2},
-    {type:'line',label:FD[seg].result_label,data:FD[seg].results,borderColor:'#18AEC6',backgroundColor:'#18AEC6',borderWidth:2,tension:0.3,pointRadius:3,yAxisID:'y1',order:1}
+    {type:'bar',label:'Investido (R$)',data:FD[seg].invest,backgroundColor:'#E8D7F7',borderColor:'#7B2FBE',borderWidth:0.5,borderRadius:4,yAxisID:'y',order:2},
+    {type:'line',label:FD[seg].result_label,data:FD[seg].results,borderColor:'#7B2FBE',backgroundColor:'#7B2FBE',borderWidth:2,tension:0.3,pointRadius:3,yAxisID:'y1',order:1}
   ]},
   options:{responsive:true,maintainAspectRatio:false,interaction:{mode:'index',intersect:false},
     plugins:{legend:{display:false},tooltip:{...TT,callbacks:{label:function(ctx){
@@ -1147,13 +1073,13 @@ var centerLabelPlugin={
 };
 var cPie=new Chart(document.getElementById('chartPie'),{
   type:'doughnut',
-  data:{labels:['Fundo VEN','Fundo MSG','Meio','Topo'],datasets:[{data:[0,0,0,0],backgroundColor:['#1877F2','#18AEC6','#0077A8','#E08C00'],borderWidth:0,spacing:3}]},
+  data:{labels:['Fundo VEN','Fundo MSG','Meio','Topo'],datasets:[{data:[0,0,0,0],backgroundColor:['#1877F2','#7B2FBE','#0077A8','#E08C00'],borderWidth:0,spacing:3}]},
   plugins:[centerLabelPlugin],
   options:{responsive:true,maintainAspectRatio:false,cutout:'60%',plugins:{legend:{display:false},tooltip:{...TT,callbacks:{label:function(ctx){return ctx.label+': R$ '+ctx.parsed.toLocaleString('pt-BR',{minimumFractionDigits:2});}}}}}
 });
 
 // ── CHART 4: Receita diária ───────────────────────────────────
-var cReceita=new Chart(document.getElementById('chartReceita'),{
+new Chart(document.getElementById('chartReceita'),{
   type:'bar',
   data:{labels:_D.LABELS,datasets:[{label:'Receita (R$)',data:_D.RECEITA_SERIES,backgroundColor:'rgba(0,147,74,0.7)',borderColor:'#00934a',borderWidth:0.5,borderRadius:4}]},
   options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{...TT,callbacks:{label:function(ctx){return 'Receita: R$ '+ctx.parsed.y.toLocaleString('pt-BR',{minimumFractionDigits:2});}}}},
@@ -1170,7 +1096,7 @@ if(_D.meta.tipo==='msg'){var _rc=document.getElementById('chartReceita');if(_rc&
     var pct=(r.invest/maxInvest*100).toFixed(1);
     html+='<div class="dt-row">'
       +'<div class="dt-date">'+r.label+'</div>'
-      +'<div class="dt-bar-track"><div class="dt-bar-fill" style="width:'+pct+'%;background:#18AEC6;"></div></div>'
+      +'<div class="dt-bar-track"><div class="dt-bar-fill" style="width:'+pct+'%;background:#7B2FBE;"></div></div>'
       +'<div class="dt-stats">'
       +'<div><div class="dt-stat-label">Invest.</div><div class="dt-stat-val" style="text-align:right">R$ '+r.invest.toLocaleString('pt-BR',{minimumFractionDigits:2})+'</div></div>'
       +'<div><div class="dt-stat-label">Conv.</div><div class="dt-stat-val" style="color:var(--purple);text-align:right">'+r.conversas+'</div></div>'
@@ -1196,8 +1122,8 @@ if(_D.meta.tipo==='msg'){var _rc=document.getElementById('chartReceita');if(_rc&
 })();
 
 // ── FILTER ────────────────────────────────────────────────────
-var barColors={FUNDO_VEN:'#E2F7FA',FUNDO_MSG:'#E2F7FA',MEIO:'#CCE8F4',TOPO:'#FFF0CC'};
-var lineColors={FUNDO_VEN:'#1877F2',FUNDO_MSG:'#18AEC6',MEIO:'#0077A8',TOPO:'#E08C00'};
+var barColors={FUNDO_VEN:'#E8D7F7',FUNDO_MSG:'#E8D7F7',MEIO:'#CCE8F4',TOPO:'#FFF0CC'};
+var lineColors={FUNDO_VEN:'#1877F2',FUNDO_MSG:'#7B2FBE',MEIO:'#0077A8',TOPO:'#E08C00'};
 
 // HERO_DATA e GERAL_KPIS são placeholders vazios — são preenchidos dinamicamente em renderRange
 var HERO_DATA={GERAL:{text:'—',stats:[{l:'—',v:'—'},{l:'—',v:'—'},{l:'—',v:'—'}]}};
@@ -1274,19 +1200,19 @@ function applyFilter(s){
   // update charts
   c1.data.labels=fd.labels;
   c1.data.datasets[0].data=fd.invest;
-  c1.data.datasets[0].backgroundColor=barColors[s]||'#E2F7FA';
-  c1.data.datasets[0].borderColor=lineColors[s]||'#18AEC6';
+  c1.data.datasets[0].backgroundColor=barColors[s]||'#E8D7F7';
+  c1.data.datasets[0].borderColor=lineColors[s]||'#7B2FBE';
   c1.data.datasets[1].data=fd.results;
   c1.data.datasets[1].label=fd.result_label;
-  c1.data.datasets[1].borderColor=lineColors[s]||'#18AEC6';
-  c1.data.datasets[1].backgroundColor=lineColors[s]||'#18AEC6';
+  c1.data.datasets[1].borderColor=lineColors[s]||'#7B2FBE';
+  c1.data.datasets[1].backgroundColor=lineColors[s]||'#7B2FBE';
   c1.update();
   c2.data.labels=fd.labels;
   c2.data.datasets[0].data=fd.cpr;
   c2.data.datasets[0].label=fd.cpr_label;
   c2.update();
   // resize charts caso tenham sido ocultados anteriormente
-  setTimeout(function(){c1.resize();c2.resize();if(cPie)cPie.resize();if(cReceita)cReceita.resize();},100);
+  setTimeout(function(){c1.resize();c2.resize();if(cPie)cPie.resize();},100);
   updateHero(s);
 }
 
@@ -1409,8 +1335,8 @@ function renderRange(startIso,endIso){
   ];
   if(_D.meta.tipo==='msg'){window._geralKpis=[
     {label:'Investido total',value:'R$ '+_fmtN(totInv),color:'var(--text)',sub:nDays+' dias analisados'},
-    {label:'Conversas',value:_fmtN(msg.totRes),color:'#18AEC6',sub:'via WhatsApp'},
-    {label:'Custo/Conversa',value:msg.totRes>0?_fmtR(msg.totInv/msg.totRes):'-',color:'#18AEC6',sub:'custo por resultado'},
+    {label:'Conversas',value:_fmtN(msg.totRes),color:'#7B2FBE',sub:'via WhatsApp'},
+    {label:'Custo/Conversa',value:msg.totRes>0?_fmtR(msg.totInv/msg.totRes):'-',color:'#7B2FBE',sub:'custo por resultado'},
     {label:'Alcance',value:_fmtN(msg.totReach||topo.totRes),color:'var(--text)',sub:'pessoas impactadas'}];}
 
   // ── Update hero texts dynamically for ALL segments ───────
@@ -1472,7 +1398,7 @@ function renderRange(startIso,endIso){
     var pct=(r.invest/maxI*100).toFixed(1);
     dtHtml+='<div class="dt-row">'
       +'<div class="dt-date">'+r.label+'</div>'
-      +'<div class="dt-bar-track"><div class="dt-bar-fill" style="width:'+pct+'%;background:#18AEC6;"></div></div>'
+      +'<div class="dt-bar-track"><div class="dt-bar-fill" style="width:'+pct+'%;background:#7B2FBE;"></div></div>'
       +'<div class="dt-stats">'
       +'<div><div class="dt-stat-label">Invest.</div><div class="dt-stat-val" style="text-align:right">R$ '+r.invest.toLocaleString('pt-BR',{minimumFractionDigits:2})+'</div></div>'
       +'<div><div class="dt-stat-label">Conv.</div><div class="dt-stat-val" style="color:var(--purple);text-align:right">'+r.conversas+'</div></div>'
@@ -1707,3 +1633,4 @@ renderRange(_MIN_ISO, _MAX_ISO);
 </script>
 </body>
 </html>
+
